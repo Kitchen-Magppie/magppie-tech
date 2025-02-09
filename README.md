@@ -1,40 +1,97 @@
-# Welcome to Remix!
+````markdown
+# MAGPPIE Tech
 
-- 📖 [Remix docs](https://remix.run/docs)
+This project is built using a modern web development stack, combining the power of Remix.js for server-side rendering and routing with the flexibility of React.js for the user interface. TypeScript adds type safety and improves code maintainability, while Tailwind CSS, integrated through Shadcn, provides a utility-first approach to styling. Vite ensures fast development builds and hot module replacement.
 
-## Development
+## Tech Stack
 
-Run the dev server:
+- **Framework:** Remix.js (React.js with TypeScript)
+- **Styling:** Shadcn (Tailwind CSS)
+- **Build Tool (Bundler):** Vite
+- **Database:** Firebase
+- **State Management:** Zustand
+- **Utility Libraries:** dayjs, lodash
 
-```shellscript
-npm run dev
+## Libraries
+
+- **dayjs:** For date and time manipulation.
+- **lodash:** Provides various helper functions.
+
+## Development Setup
+
+### Prerequisites
+
+- Node.js (22.\* LTS)
+- pnpm (recommended)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Kitchen-Magppie/magppie-tech
+   ```
+````
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd magpie-tech  # Or the name of your project directory
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Development Server
+
+```bash
+pnpm run dev
 ```
 
-## Deployment
+This will start the development server. Open your browser and navigate to the provided URL (usually `http://localhost:5173`).
 
-First, build your app for production:
+### Building for Production
 
-```sh
-npm run build
+```bash
+pnpm run build
 ```
 
-Then run the app in production mode:
+This will create a production-ready build of your application.
 
-```sh
-npm start
+### Running the Production Build
+
+```bash
+pnpm run start
 ```
 
-Now you'll need to pick a host to deploy it to.
+## Recommended VS Code Extensions
 
-### DIY
+For a smoother development experience, it is highly recommended to install the following VS Code extensions:
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+- **ESLint:** [https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Integrates ESLint for linting your code.
+- **Prettier:** [https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Formats your code for consistency.
+- **TypeScript:** [https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next) - Provides enhanced TypeScript support.
+- **React.js Code Snippets:** [https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets) - Adds useful React code snippets.
 
-Make sure to deploy the output of `npm run build`
+## VS Code Settings
 
-- `build/server`
-- `build/client`
+It's highly recommended to enable the "Format on Save" option in VS Code to automatically format your code every time you save a file. This will ensure consistent code formatting and improve your development workflow.
 
-## Styling
+To enable this setting:
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+1. Open VS Code settings (File > Preferences > Settings or Code > Preferences > Settings on macOS).
+2. Search for "Editor: Format On Save".
+3. Check the box to enable the setting.
+
+## Contributing
+
+(If you want to allow contributions to your project, add a contributing section here.)
+
+## License
+
+(Specify the license under which your project is distributed.)
+
+```
+
+```
