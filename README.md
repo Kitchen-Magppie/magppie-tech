@@ -21,14 +21,14 @@ This project is built using a modern web development stack, combining the power 
 
 ### Prerequisites
 
-- Node.js (version >= 16 recommended)
-- npm or yarn or pnpm
+- Node.js (22.\* LTS)
+- pnpm (recommended)
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/Kitchen-Magppie/magppie-tech
    ```
 ````
 
@@ -46,15 +46,15 @@ This project is built using a modern web development stack, combining the power 
 ### Running the Development Server
 
 ```bash
-npm run dev # or yarn dev or pnpm dev
+pnpm run dev # or yarn dev or pnpm dev
 ```
 
-This will start the development server. Open your browser and navigate to the provided URL (usually `http://localhost:3000`).
+This will start the development server. Open your browser and navigate to the provided URL (usually `http://localhost:5173`).
 
 ### Building for Production
 
 ```bash
-npm run build # or yarn build or pnpm build
+pnpm run build # or yarn build or pnpm build
 ```
 
 This will create a production-ready build of your application.
@@ -62,7 +62,7 @@ This will create a production-ready build of your application.
 ### Running the Production Build
 
 ```bash
-npm run start # or yarn start or pnpm start
+pnpm run start # or yarn start or pnpm start
 ```
 
 ## Recommended VS Code Extensions
