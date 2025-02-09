@@ -7,7 +7,7 @@ This project is built using a modern web development stack, combining the power 
 
 - **Framework:** Remix.js (React.js with TypeScript)
 - **Styling:** Shadcn (Tailwind CSS)
-- **Build Tool:** Vite
+- **Build Tool (Bundler):** Vite
 - **Database:** Firebase
 - **State Management:** Zustand
 - **Utility Libraries:** dayjs, lodash
@@ -40,13 +40,13 @@ This project is built using a modern web development stack, combining the power 
 
 3. Install dependencies:
    ```bash
-   npm install  # Or yarn install or pnpm install
+   npm install
    ```
 
 ### Running the Development Server
 
 ```bash
-pnpm run dev # or yarn dev or pnpm dev
+pnpm run dev
 ```
 
 This will start the development server. Open your browser and navigate to the provided URL (usually `http://localhost:5173`).
@@ -54,7 +54,7 @@ This will start the development server. Open your browser and navigate to the pr
 ### Building for Production
 
 ```bash
-pnpm run build # or yarn build or pnpm build
+pnpm run build
 ```
 
 This will create a production-ready build of your application.
@@ -62,7 +62,7 @@ This will create a production-ready build of your application.
 ### Running the Production Build
 
 ```bash
-pnpm run start # or yarn start or pnpm start
+pnpm run start
 ```
 
 ## Recommended VS Code Extensions
