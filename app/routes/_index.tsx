@@ -1,6 +1,6 @@
-import type { MetaFunction } from "@remix-run/node";
-import { TableExample } from "~/components";
-import { Button } from "~/components/ui/button";
+import type { MetaFunction } from '@remix-run/node';
+import { TableExample } from '~/components';
+import { Button } from '~/components/ui/button';
 
 export default function Index() {
   return (
@@ -14,7 +14,7 @@ export default function Index() {
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: 'MAGPPIE' },
+    { name: 'description', content: 'Welcome to MAGPPIE!' },
   ];
 };
