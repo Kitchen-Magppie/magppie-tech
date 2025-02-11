@@ -1,8 +1,10 @@
 import type { MetaFunction } from '@remix-run/node';
 import { TableExample } from '~/components';
 import { Button } from '~/components/ui/button';
+// import { useExampleListener } from '~/hooks';
 
 export default function Index() {
+  // useExampleListener();
   return (
     <div>
       Hello, world!
