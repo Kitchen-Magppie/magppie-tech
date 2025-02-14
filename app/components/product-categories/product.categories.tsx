@@ -1,5 +1,5 @@
 import ProductCategoriesTwo from '../../assets/videos/product-categories-2.mp4';
-import ProductCategoriesTOne from '../../assets/videos/product-categories1.mp4';
+import ProductCategoriesOne from '../../assets/videos/product-categories1.mp4';
 
 export default function ProductCategories() {
   return (
@@ -19,7 +19,7 @@ export default function ProductCategories() {
               muted
               playsInline
             >
-              <source src={ProductCategoriesTOne} type='video/mp4' />
+              <source src={ProductCategoriesOne} type='video/mp4' />
               Your browser does not support the video tag.
             </video>
           </div>

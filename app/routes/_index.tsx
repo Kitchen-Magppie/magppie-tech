@@ -6,6 +6,7 @@ import { Button } from '~/components/ui/button';
 // =========================================================
 import HomeVideo from '../assets/videos/home-intro.mp4';
 import ProductCategories from '~/components/product-categories/product.categories';
+import { ProductsCard } from '~/components/products-card';
 
 export default function Index() {
   return (
@@ -76,6 +77,7 @@ export default function Index() {
         <hr className='bg-black' />
       </MobileLayout>
       <ProductCategories />
+      <ProductsCard />
       <TableExample />
       <Button>Submit</Button>
     </div>
