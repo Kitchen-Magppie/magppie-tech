@@ -4,7 +4,8 @@ import { TableExample, MobileLayout } from '~/components';
 import { Button } from '~/components/ui/button';
 
 // =========================================================
-import HomeVideo from '../assets/home-intro.mp4';
+import HomeVideo from '../assets/videos/home-intro.mp4';
+import ProductCategories from '~/components/product-categories/product.categories';
 
 export default function Index() {
   return (
@@ -12,7 +13,7 @@ export default function Index() {
       <MobileLayout>
         <div className='relative min-h-screen'>
           {/* Background Video */}
-          <div className='absolute inset-0 w-full h-full overflow-hidden'>
+          <div className='absolute inset-0 w-full h-full overflow-hidden rounded-bl-3xl rounded-br-3xl'>
             <video
               className='w-full h-full object-cover'
               autoPlay
@@ -26,7 +27,7 @@ export default function Index() {
           </div>
 
           {/* Dark Overlay */}
-          <div className='absolute inset-0 bg-black bg-opacity-50'></div>
+          <div className='absolute inset-0 bg-black bg-opacity-50 rounded-bl-3xl rounded-br-3xl'></div>
 
           {/* Content Overlay */}
           <div className='relative flex flex-col items-center pt-8 px-6 text-center'>
@@ -48,7 +49,33 @@ export default function Index() {
             </p>
           </div>
         </div>
+
+        <section className='max-w-lg mx-auto text-center px-6 py-12'>
+          {/* Title */}
+          <h2 className='text-3xl font-semibold leading-tight text-black'>
+            Our wellness kitchen <br />
+            takes care of your <br />
+            family’s health
+          </h2>
+
+          {/* Description */}
+          <p className='mt-6 text-gray-700 text-lg leading-relaxed'>
+            Our planet faces unseen threats every day – our food, water, air,
+            and even our homes are filled with toxins. Harmful formaldehyde
+            emissions from kitchens and furniture are putting our cellular
+            health at risk.
+          </p>
+
+          <p className='mt-6 text-gray-700 text-lg leading-relaxed'>
+            At Magppie, we’re more than a brand; we’re a wellness movement. With
+            deep-tech innovations, we create health-conscious solutions to
+            transform your home – particularly kitchen, wardrobes and lighting
+            that nurtures a longer, healthier life.
+          </p>
+        </section>
+        <hr className='bg-black' />
       </MobileLayout>
+      <ProductCategories />
       <TableExample />
       <Button>Submit</Button>
     </div>
