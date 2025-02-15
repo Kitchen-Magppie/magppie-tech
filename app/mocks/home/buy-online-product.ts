@@ -1,7 +1,8 @@
-import ProductCategoriesOne from '../../assets/videos/product-categories1.mp4';
-import ProductCategoriesTwo from '../../assets/videos/product-categories-2.mp4';
+import ProductCategoriesOne from '~/assets/videos/product-categories1.mp4';
+import ProductCategoriesTwo from '~/assets/videos/product-categories-2.mp4';
+import { TCategoryItem } from '~/types';
 
-export const productCardsData = [
+export const CATEGORY_MOCK_DATA: TCategoryItem[] = [
   {
     id: 1,
     title: 'Wellness Kitchens',
