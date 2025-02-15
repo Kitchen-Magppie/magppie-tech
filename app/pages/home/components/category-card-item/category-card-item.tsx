@@ -1,10 +1,5 @@
-import {
-  MessageCircle,
-  Phone,
-  Share2,
-  Bookmark,
-  ArrowRight,
-} from 'lucide-react';
+import { Icon } from '@iconify/react';
+
 import { TCategoryItem } from '~/types';
 
 export function CategoryCardItem(props: TProps) {
@@ -30,25 +25,31 @@ export function CategoryCardItem(props: TProps) {
         {/* Overlay with Text */}
         <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white p-3 flex justify-between items-center'>
           <span className='text-lg'>{data.title}</span>
-          <ArrowRight className='w-5 h-5' />
+          <Icon icon='uil:arrow-right' className='w-5 h-5' />
         </div>
       </div>
       {/* Icon Actions - Aligned to Start */}
       <div className='flex justify-start px-3 py-4 w-full text-gray-600 gap-6'>
         <div className='flex flex-col items-center gap-1'>
-          <MessageCircle className='w-5 h-5' />
+          <Icon icon='mynaui:chat' className='w-5 h-5' />
+
           <span className='text-xs'>chat</span>
         </div>
         <div className='flex flex-col items-center gap-1'>
-          <Phone className='w-5 h-5' />
+          <Icon icon='line-md:phone' className='w-5 h-5' />
+
           <span className='text-xs'>call us</span>
         </div>
         <div className='flex flex-col items-center gap-1'>
-          <Share2 className='w-5 h-5' />
+          <Icon icon='tabler:share' className='w-5 h-5' />
+
           <span className='text-xs'>share</span>
         </div>
         <div className='flex flex-col items-center gap-1'>
-          <Bookmark className='w-5 h-5' />
+          <Icon
+            icon='material-symbols:bookmark-outline-rounded'
+            className='w-5 h-5'
+          />
           <span className='text-xs'>save</span>
         </div>
       </div>
