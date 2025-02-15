@@ -1,7 +1,7 @@
 import ProductCategoriesTwo from '~/assets/videos/product-categories-2.mp4';
 import ProductCategoriesOne from '~/assets/videos/product-categories1.mp4';
 
-export function ProductCategories() {
+export function Categories() {
   return (
     <section className='text-center py-12'>
       {/* Title */}

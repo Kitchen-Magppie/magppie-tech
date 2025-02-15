@@ -1,4 +1,3 @@
 export * from './buy-online';
-
-export * from './product-categories';
-export * from './category-item';
+export * from './categories';
+export * from './category-card-item';

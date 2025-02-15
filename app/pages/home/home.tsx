@@ -1,7 +1,7 @@
 import AssetVideoIntroduction from '~/assets/videos/home-intro.mp4';
 import {
   BuyOnline,
-  ProductCategories,
+  Categories,
   CategoryCardItem,
 } from '~/pages/home/components';
 import { MobileLayout } from '~/components';
@@ -75,7 +75,7 @@ export default function Home() {
         </section>
         <hr className='bg-black' />
       </MobileLayout>
-      <ProductCategories />
+      <Categories />
       <div className='max-w-sm mx-auto overflow-hidden'>
         {CATEGORY_MOCK_DATA.map((data, i) => (
           <CategoryCardItem data={data} key={i} />
