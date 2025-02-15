@@ -2,8 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { MessageCircle, Phone, Share2, Bookmark } from 'lucide-react';
 import { TBuyOnlineItem } from '~/types';
+import { Icon } from '@iconify/react';
 
 export function BuyOnlineCardItem(props: TProps) {
   const { data } = props;
@@ -51,19 +51,22 @@ export function BuyOnlineCardItem(props: TProps) {
       {/* Action Icons */}
       <div className='flex justify-start gap-6 px-4 py-3 text-gray-600'>
         <div className='flex flex-col items-center gap-1'>
-          <MessageCircle className='w-5 h-5' />
+          <Icon icon='mynaui:chat' className='w-5 h-5' />
           <span className='text-xs'>chat</span>
         </div>
         <div className='flex flex-col items-center gap-1'>
-          <Phone className='w-5 h-5' />
+          <Icon icon='line-md:phone' className='w-5 h-5' />
           <span className='text-xs'>call us</span>
         </div>
         <div className='flex flex-col items-center gap-1'>
-          <Share2 className='w-5 h-5' />
+          <Icon icon='tabler:share' className='w-5 h-5' />
           <span className='text-xs'>share</span>
         </div>
         <div className='flex flex-col items-center gap-1'>
-          <Bookmark className='w-5 h-5' />
+          <Icon
+            icon='material-symbols:bookmark-outline-rounded'
+            className='w-5 h-5'
+          />
           <span className='text-xs'>save</span>
         </div>
       </div>
