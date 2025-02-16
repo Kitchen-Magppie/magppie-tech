@@ -4,7 +4,6 @@ import { Navigation } from 'swiper/modules';
 // =================================================
 import { TBuyOnlineItem } from '~/types';
 import { CARD_ACTION_OPTIONS } from '~/mocks';
-import classes from './buy-online-card-item.module.scss';
 
 export function BuyOnlineCardItem(props: TProps) {
   const { data } = props;
@@ -26,7 +25,7 @@ export function BuyOnlineCardItem(props: TProps) {
         <Swiper
           navigation
           modules={[Navigation]}
-          className={`w-full h-[400px] rounded-xl ${classes.BuyOnlineCardItemNavArrow}`}
+          className={`w-full h-[400px] rounded-xl  `}
         >
           {data.images.map((image, i) => (
             <SwiperSlide key={i}>
