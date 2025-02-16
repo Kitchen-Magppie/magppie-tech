@@ -11,7 +11,7 @@ import { ButtonsMenu } from './components/buttons-menu'; // Import FloatingMenu 
 export default function BuyNow() {
   return (
     <>
-      <MobileLayout title='wellnesshome.com'>
+      <MobileLayout>
         <div className='relative h-[700px]'>
           {/* Background Video */}
           <div className='absolute inset-0 w-full h-full overflow-hidden rounded-bl-3xl rounded-br-3xl'>
