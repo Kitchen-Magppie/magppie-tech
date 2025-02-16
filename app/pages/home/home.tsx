@@ -1,3 +1,4 @@
+// =================================================
 import AssetVideoIntroduction from '~/assets/videos/home-intro.mp4';
 import {
   BuyOnline,
@@ -44,9 +45,9 @@ export default function Home() {
             </h1>
 
             {/* Subtitle */}
-            <p className='text-white/90 mt-60 text-lg x-font-barlow-semi-condensed-400'>
+            <div className='text-white/90 mt-60 text-lg x-font-barlow-semi-condensed-400'>
               Welcome to the wellness movement
-            </p>
+            </div>
           </div>
         </div>
 

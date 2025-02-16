@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-
+// =================================================
 import { TBuyOnlineItem } from '~/types';
 import { CARD_ACTION_OPTIONS } from '~/mocks';
 import classes from './buy-online-card-item.module.scss';
@@ -10,7 +10,7 @@ export function BuyOnlineCardItem(props: TProps) {
   const { data } = props;
 
   return (
-    <div className='overflow-hidden'>
+    <div>
       {/* Header */}
       <div className='flex items-center gap-2 p-4'>
         <div className='w-12 h-12 bg-[#354755] text-white text-[10px] font-bold flex items-center justify-center rounded-full'>
