@@ -40,7 +40,7 @@ export default function Home() {
             </div>
 
             {/* Title */}
-            <h1 className='text-3xl  text-white mb-2  x-font-exo-400'>
+            <h1 className='text-2xl  text-white mb-2  x-font-exo-300'>
               Wellness Kitchen
             </h1>
 
