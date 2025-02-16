@@ -20,8 +20,8 @@ export const CATEGORY_MOCK_DATA: TCategoryItem[] = [
 ];
 
 export const CARD_ACTION_OPTIONS = [
-  { value: 'mynaui:chat', label: 'chat' },
+  { value: 'uil:chat', label: 'chat' },
   { value: 'line-md:phone', label: 'call us' },
-  { value: 'tabler:share', label: 'share' },
+  { value: 'bitcoin-icons:share-outline', label: 'share' },
   { value: 'material-symbols:bookmark-outline-rounded', label: 'save' },
 ];
