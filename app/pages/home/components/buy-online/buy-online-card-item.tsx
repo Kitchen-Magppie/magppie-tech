@@ -2,18 +2,19 @@ import { Icon } from '@iconify/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { TBuyOnlineItem } from '~/types';
+import { CARD_ACTION_OPTIONS } from '~/mocks';
 
 export function BuyOnlineCardItem(props: TProps) {
   const { data } = props;
 
   return (
-    <div className='border rounded-lg overflow-hidden'>
+    <div className=' overflow-hidden'>
       {/* Header */}
       <div className='flex items-center gap-2 p-4'>
-        <div className='w-8 h-8 bg-black text-white text-xs font-bold flex items-center justify-center rounded-full'>
+        <div className='w-12 h-12 bg-[#354755] text-white text-[10px] font-bold flex items-center justify-center rounded-full'>
           MAGPIE
         </div>
-        <span className='text-gray-900 font-medium text-sm'>
+        <span className='text-gray-900  text-medium x-font-barlow-semi-condensed-400'>
           wellness kitchen
         </span>
       </div>
@@ -48,35 +49,28 @@ export function BuyOnlineCardItem(props: TProps) {
       </div>
 
       {/* Action Icons */}
-      <div className='flex justify-start gap-6 px-4 py-3 text-gray-600'>
-        <div className='flex flex-col items-center gap-1'>
-          <Icon icon='mynaui:chat' className='w-5 h-5' />
-          <span className='text-xs'>chat</span>
-        </div>
-        <div className='flex flex-col items-center gap-1'>
-          <Icon icon='line-md:phone' className='w-5 h-5' />
-          <span className='text-xs'>call us</span>
-        </div>
-        <div className='flex flex-col items-center gap-1'>
-          <Icon icon='tabler:share' className='w-5 h-5' />
-          <span className='text-xs'>share</span>
-        </div>
-        <div className='flex flex-col items-center gap-1'>
-          <Icon
-            icon='material-symbols:bookmark-outline-rounded'
-            className='w-5 h-5'
-          />
-          <span className='text-xs'>save</span>
-        </div>
+      <div className='flex justify-start gap-6 px-4 py-3 text-gray-500'>
+        {CARD_ACTION_OPTIONS?.map((item, i) => {
+          return (
+            <div className='flex flex-col items-center gap-1' key={i}>
+              <Icon icon={item.value} className='w-5 h-5' />
+              <span className='text-xs'>{item.label}</span>
+            </div>
+          );
+        })}
       </div>
 
       {/* Product Description */}
       <div className='p-4 flex flex-col justify-start items-start'>
-        <h3 className='text-lg font-semibold'>{data.title}</h3>
-        <p className='text-sm text-gray-700 mt-1'>{data.desc}</p>
+        <h3 className='text-lg x-font-barlow-semi-condensed-5s00'>
+          {data.title}
+        </h3>
+        <p className='text-sm text-left text-gray-700 mt-1 x-font-barlow-semi-condensed-300'>
+          {data.desc}
+        </p>
         <a
           href='/wardrobes'
-          className='text-blue-600 font-medium text-sm mt-2 inline-block underline'
+          className=' text-gray-500 font-medium text-sm mt-2 inline-block underline'
         >
           see all wellness kitchens
         </a>

@@ -75,7 +75,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <hr className='bg-black' />
+        {/* <hr className='bg-black' /> */}
       </MobileLayout>
       <Categories />
       <div className='max-w-sm mx-auto overflow-hidden'>
@@ -83,7 +83,8 @@ export default function Home() {
           <CategoryCardItem data={data} key={i} />
         ))}
       </div>
-      <hr className='bg-black' />
+      {/* <hr className='bg-black' /> */}
+
       <BuyOnline />
     </div>
   );
