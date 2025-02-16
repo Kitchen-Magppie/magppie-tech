@@ -3,7 +3,7 @@ import arshad from '~/assets/images/clients/arshad.png';
 import chiranjeevi from '~/assets/images/clients/chirnjeevi.png';
 import dhoni from '~/assets/images/clients/dhoni.png';
 import harbajan from '~/assets/images/clients/hrbhjn.png';
-// import kamal from '../../../kitchen-dweb/assets/clients/kamal.png';
+import sussne from '~/assets/images/clients/sussne.jfif';
 // import subhash from '../../../kitchen-dweb/assets/clients/subhash.png';
 import sunil from '~/assets/images/clients/sunil-bhrti.png';
 // import vandana from '../../../kitchen-dweb/assets/clients/vandana.png';
@@ -14,57 +14,57 @@ export const clients = [
   {
     id: 1,
     src: dhoni,
-    colSpan: 1,
-    rowSpan: 2,
+    height: '300px',
     title: 'MS Dhoni',
     subTitle: 'Cricket Captain',
   },
   {
     id: 2,
-    src: arshad,
-    colSpan: 1,
-    rowSpan: 1,
-    title: 'Arshad Warsi',
+    src: ranbir,
+    height: '500px',
+    title: 'Ranbir Kapoor',
     subTitle: 'Actor',
   },
   {
     id: 3,
     src: harbajan,
-    colSpan: 1,
-    rowSpan: 1,
+    height: '300px',
     title: 'Harbhajan Singh',
     subTitle: 'Cricketer',
   },
   {
     id: 4,
     src: chiranjeevi,
-    colSpan: 1,
-    rowSpan: 1,
+    height: '300px',
     title: 'Chiranjeevi',
     subTitle: 'Actor',
-    height: 1,
   },
   {
     id: 5,
-    src: ranbir,
-    colSpan: 1,
-    rowSpan: 2,
-    title: 'Ranbir Kapoor',
+    src: sussne,
+    height: '300px',
+    title: 'Sussanne Khan',
+    subTitle: 'Interior Designer',
+  },
+  {
+    id: 6,
+    src: arshad,
+    height: '350px',
+    title: 'Arshad Warsi',
     subTitle: 'Actor',
   },
   //   {
-  //     id: 6,
-  //     src: vandana,
-  //     colSpan: 1,
-  //     rowSpan: 1,
+    //     id: 6,
+    //     src: vandana,
+    //     colSpan: 1,
+    //     rowSpan: 1,
   //     title: 'Vandana Munjal',
   //     subTitle: 'Owner, Hero',
   //   },
   {
     id: 7,
     src: sunil,
-    colSpan: 1,
-    rowSpan: 2,
+    height: '300px',
     title: 'Sunil Bharti Mittal',
     subTitle: 'Owner, Airtel',
   },
@@ -77,10 +77,9 @@ export const clients = [
   //     subTitle: 'Chairperson, Park',
   //   },
   {
-    id: 9,
+    id: 8,
     src: natasha,
-    colSpan: 1,
-    rowSpan: 1,
+    height: '300px',
     title: 'Natasha Poonawala',
     subTitle: 'Philanthropist',
   },
