@@ -24,4 +24,11 @@ export default defineConfig({
   server: {
     host: true,
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern',
+      },
+    },
+  },
 });
