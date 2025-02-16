@@ -39,12 +39,12 @@ export default function Home() {
             </div>
 
             {/* Title */}
-            <h1 className='text-3xl font-semibold text-white mb-2'>
+            <h1 className='text-3xl  text-white mb-2  x-font-exo-400'>
               Wellness Kitchen
             </h1>
 
             {/* Subtitle */}
-            <p className='text-white/90 mt-60 text-lg'>
+            <p className='text-white/90 mt-60 text-lg x-font-barlow-semi-condensed-400'>
               Welcome to the wellness movement
             </p>
           </div>
@@ -52,28 +52,30 @@ export default function Home() {
 
         <section className='max-w-lg mx-auto text-center px-6 py-12'>
           {/* Title */}
-          <h2 className='text-3xl font-semibold leading-tight text-black'>
+          <h2 className='text-3xl  leading-tight text-black x-font-dalglish-400'>
             Our wellness kitchen <br />
             takes care of your <br />
             family’s health
           </h2>
 
           {/* Description */}
-          <p className='mt-6 text-gray-700 text-lg leading-relaxed'>
-            Our planet faces unseen threats every day – our food, water, air,
-            and even our homes are filled with toxins. Harmful formaldehyde
-            emissions from kitchens and furniture are putting our cellular
-            health at risk.
-          </p>
+          <div className='x-font-barlow-semi-condensed-300'>
+            <p className='mt-6 text-gray-700 text-lg leading-relaxed '>
+              Our planet faces unseen threats every day – our food, water, air,
+              and even our homes are filled with toxins. Harmful formaldehyde
+              emissions from kitchens and furniture are putting our cellular
+              health at risk.
+            </p>
 
-          <p className='mt-6 text-gray-700 text-lg leading-relaxed'>
-            At Magppie, we’re more than a brand; we’re a wellness movement. With
-            deep-tech innovations, we create health-conscious solutions to
-            transform your home – particularly kitchen, wardrobes and lighting
-            that nurtures a longer, healthier life.
-          </p>
+            <p className='mt-6 text-gray-700 text-lg leading-relaxed'>
+              At Magppie, we’re more than a brand; we’re a wellness movement.
+              With deep-tech innovations, we create health-conscious solutions
+              to transform your home – particularly kitchen, wardrobes and
+              lighting that nurtures a longer, healthier life.
+            </p>
+          </div>
         </section>
-        <hr className='bg-black' />
+        {/* <hr className='bg-black' /> */}
       </MobileLayout>
       <Categories />
       <div className='max-w-sm mx-auto overflow-hidden'>
@@ -81,7 +83,8 @@ export default function Home() {
           <CategoryCardItem data={data} key={i} />
         ))}
       </div>
-      <hr className='bg-black' />
+      {/* <hr className='bg-black' /> */}
+
       <BuyOnline />
     </div>
   );

@@ -18,3 +18,10 @@ export const CATEGORY_MOCK_DATA: TCategoryItem[] = [
     desc: 'Harmful formaldehyde emissions from kitchens and furniture are putting our cellular health at risk...',
   },
 ];
+
+export const CARD_ACTION_OPTIONS = [
+  { value: 'mynaui:chat', label: 'chat' },
+  { value: 'line-md:phone', label: 'call us' },
+  { value: 'tabler:share', label: 'share' },
+  { value: 'material-symbols:bookmark-outline-rounded', label: 'save' },
+];

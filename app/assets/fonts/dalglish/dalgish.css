@@ -1,0 +1,41 @@
+.x-font-dalglish-100 {
+  font-family: 'Dalglish Regular', serif;
+  src: url('./dalglish-regular.ttf');
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+.x-font-dalglish-200 {
+  font-family: 'Dalglish Regular', serif;
+  src: url('./dalglish-regular.ttf');
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+.x-font-dalglish-300 {
+  font-family: 'Dalglish Regular', serif;
+  src: url('./dalglish-regular.ttf');
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.x-font-dalglish-400 {
+  font-family: 'Dalglish', serif;
+  src: url('dalglish-regular.ttf');
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.x-font-dalglish-500 {
+  font-family: 'Dalglish Regular', serif;
+  src: url('./dalglish-regular.ttf');
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
