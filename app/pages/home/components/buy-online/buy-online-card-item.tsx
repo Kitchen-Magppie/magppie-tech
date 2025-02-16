@@ -1,15 +1,13 @@
 import { Icon } from '@iconify/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
 import { TBuyOnlineItem } from '~/types';
 
 export function BuyOnlineCardItem(props: TProps) {
   const { data } = props;
 
   return (
-    <div key={data.id} className='border rounded-lg overflow-hidden'>
+    <div className='border rounded-lg overflow-hidden'>
       {/* Header */}
       <div className='flex items-center gap-2 p-4'>
         <div className='w-8 h-8 bg-black text-white text-xs font-bold flex items-center justify-center rounded-full'>
