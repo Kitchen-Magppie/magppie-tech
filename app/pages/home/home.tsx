@@ -10,7 +10,7 @@ import { CATEGORY_MOCK_DATA } from '~/mocks';
 export default function Home() {
   return (
     <div>
-      <MobileLayout>
+      <MobileLayout title='magppie.com'>
         <div className='relative min-h-screen'>
           {/* Background Video */}
           <div className='absolute inset-0 w-full h-full overflow-hidden rounded-bl-3xl rounded-br-3xl'>

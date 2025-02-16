@@ -5,11 +5,11 @@ import 'swiper/css/navigation';
 
 import { MobileNavBar } from '~/components';
 
-export function MobileLayout({ children }: TProps) {
+export function MobileLayout({ children, title }: TProps) {
   return (
     <div className='min-h-screen bg-background'>
       <div className='fixed top-0 left-0 right-0 h-8 bg-white flex items-center justify-center text-sm text-neutral-900 z-50'>
-        magppie.com
+        {title}
       </div>
       <div className='pt-7'>{children}</div>
       <MobileNavBar />
@@ -19,4 +19,5 @@ export function MobileLayout({ children }: TProps) {
 
 interface TProps {
   children: ReactNode;
+  title: string;
 }
