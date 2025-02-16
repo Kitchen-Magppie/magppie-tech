@@ -1,4 +1,6 @@
 import { ReactNode } from 'react';
+import 'swiper/css';
+import 'swiper/css/navigation';
 // =========================================================
 
 import { MobileNavBar } from '~/components';

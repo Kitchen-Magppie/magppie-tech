@@ -5,7 +5,7 @@ import { TCategoryItem } from '~/types';
 export function CategoryCardItem(props: TProps) {
   const { data } = props;
   return (
-    <div key={data.id} className='flex flex-col'>
+    <div className='flex flex-col'>
       {/* Video Section with Rounded Borders */}
       <div className='relative rounded-2xl overflow-hidden'>
         <video
