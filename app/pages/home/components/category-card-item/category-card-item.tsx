@@ -47,14 +47,13 @@ export function CategoryCardItem(props: TProps) {
       </div>
       {/* Content Section */}
       <div className='px-3 pb-6'>
-        <h3 className='text-lg font-semibold'>{data.subTitle}</h3>
+        <h3 className='text-lg  x-font-barlow-semi-condensed-500'>
+          {data.subTitle}
+        </h3>
         <p className='text-sm text-gray-700 mt-1'>{data.desc}</p>
-        <a
-          href='/'
-          className='text-blue-600 font-medium text-sm mt-2 inline-block'
-        >
+        <div className='x-font-barlow-semi-condensed-400 underline font-medium text-lg mt-2 inline-block text-gray-700'>
           READ MORE
-        </a>
+        </div>
       </div>
     </div>
   );

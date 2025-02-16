@@ -84,7 +84,7 @@ export default function Home() {
           <CategoryCardItem data={data} key={i} />
         ))}
       </div>
-      {/* <hr className='bg-black' /> */}
+      <hr className='bg-black' />
 
       <BuyOnline />
     </div>
