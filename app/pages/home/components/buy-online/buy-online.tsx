@@ -6,8 +6,8 @@ export function BuyOnline() {
     <section className='text-center py-12'>
       <h2 className='text-3xl font-semibold italic'>Buy Online</h2>
       <div className='max-w-sm mx-auto rounded-lg overflow-hidden'>
-        {BUY_ONLINE_MOCK_DATA.map((product, i) => (
-          <BuyOnlineCardItem key={i} data={product} />
+        {BUY_ONLINE_MOCK_DATA.map((data, i) => (
+          <BuyOnlineCardItem key={i} data={data} />
         ))}
       </div>
     </section>
