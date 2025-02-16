@@ -1,14 +1,16 @@
 import { Icon } from '@iconify/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+
 import { TBuyOnlineItem } from '~/types';
 import { CARD_ACTION_OPTIONS } from '~/mocks';
+import classes from './buy-online-card-item.module.scss';
 
 export function BuyOnlineCardItem(props: TProps) {
   const { data } = props;
 
   return (
-    <div className=' overflow-hidden'>
+    <div className='overflow-hidden'>
       {/* Header */}
       <div className='flex items-center gap-2 p-4'>
         <div className='w-12 h-12 bg-[#354755] text-white text-[10px] font-bold flex items-center justify-center rounded-full'>
@@ -24,29 +26,53 @@ export function BuyOnlineCardItem(props: TProps) {
         <Swiper
           navigation
           modules={[Navigation]}
-          className='w-full h-[400px] rounded-t-lg'
+          className={`w-full h-[400px] rounded-xl ${classes.BuyOnlineCardItemNavArrow}`}
         >
-          {data.images.map((image, index) => (
-            <SwiperSlide key={index}>
-              <img
-                src={image}
-                alt={`${data.title} ${index + 1}`}
-                className='w-full h-full object-cover rounded-t-lg'
-              />
+          {data.images.map((image, i) => (
+            <SwiperSlide key={i}>
+              <div
+                style={{ background: `url(${image})` }}
+                className='w-full h-full object-cover x-font-barlow-semi-condensed-100 overflow-hidden relative'
+              >
+                {/* <img
+                  src={image}
+                  alt={`${data.title} ${i + 1}`}
+                  className='w-full h-full object-cover rounded-t-lg'
+                /> */}
+                <div>
+                  <div className='bg-transparent absolute bottom-0 left-0 right-0 '>
+                    <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white p-3 flex justify-between items-center'>
+                      <div className='flex justify-center gap-1'>
+                        <div className=' text-2xl'>$</div>
+                        <div className='flex flex-col justify-start'>
+                          <div className='text-xl font-light'>
+                            {data.amount}
+                          </div>
+                          <div className='text-xs font-semibold'>onwards</div>
+                        </div>
+                      </div>
+
+                      <button className='bg-white text-black  px-6 py-2 rounded-full text-sm '>
+                        buy now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
       {/* Price and Buy Button */}
-      <div className='p-4 flex justify-between items-center'>
+      {/* <div className='p-4 flex justify-between items-center'>
         <div className='text-gray-900'>
           <span className='text-xl font-bold'>{data.amount}</span>
         </div>
         <button className='bg-black text-white px-6 py-2 rounded-full text-sm font-medium'>
           buy now
         </button>
-      </div>
+      </div> */}
 
       {/* Action Icons */}
       <div className='flex justify-start gap-6 px-4 py-3 text-gray-500'>

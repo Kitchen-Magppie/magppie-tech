@@ -1,0 +1,8 @@
+/* More specific targeting if you added a custom class */
+.BuyOnlineCardItemNavArrow {
+  &.swiper-button-prev,
+  &.swiper-button-next {
+    // border: 1px solid red !important;
+    @apply text-red-500; /* Example: Red arrows */
+  }
+}

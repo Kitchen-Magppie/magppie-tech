@@ -4,7 +4,7 @@ import { _, TBuyOnlineItem } from '~/types';
 export const BUY_ONLINE_MOCK_DATA: TBuyOnlineItem[] = [
   {
     id: 1,
-    amount: '$15000 onwards',
+    amount: '15,000',
     heading: 'wellness kitchen',
     title: 'nova wellness kitchen',
     images: _.times(5, () => novaOne),
@@ -12,7 +12,7 @@ export const BUY_ONLINE_MOCK_DATA: TBuyOnlineItem[] = [
   },
   {
     id: 2,
-    amount: '$12000 onwards',
+    amount: '12,000',
     heading: 'wellness wardrobe',
     title: 'bella rosé wellness wardrobe',
     images: _.times(5, () => novaOne),
