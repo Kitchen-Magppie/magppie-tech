@@ -6,6 +6,7 @@ import {
 } from '~/pages/home/components';
 import { MobileLayout } from '~/components';
 import { CATEGORY_MOCK_DATA } from '~/mocks';
+import { Clients } from './components/clients';
 
 export default function Home() {
   return (
@@ -86,6 +87,8 @@ export default function Home() {
       {/* <hr className='bg-black' /> */}
 
       <BuyOnline />
+
+      <Clients />
     </div>
   );
 }
