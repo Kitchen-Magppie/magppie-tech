@@ -4,7 +4,7 @@ import { BuyOnlineCardItem } from './buy-online-card-item';
 export function BuyOnline() {
   return (
     <section className='text-center py-8 flex flex-col gap-5'>
-      <h2 className='text-3xl font-semibold x-font-noto-serif-display-600-italic'>
+      <h2 className='text-3xl  x-font-noto-serif-display-600-italic'>
         Buy Online
       </h2>
 

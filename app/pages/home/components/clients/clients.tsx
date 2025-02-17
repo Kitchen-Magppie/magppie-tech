@@ -4,7 +4,7 @@ import { clients } from './data';
 export function Clients() {
   return (
     <section className='px-4 py-8'>
-      <h2 className='text-center text-4xl font-semibold italic mb-6'>
+      <h2 className='text-center text-4xl x-font-noto-serif-display-600-italic mb-6'>
         Our Clients
       </h2>
       <div className='grid grid-cols-2 gap-4'>
