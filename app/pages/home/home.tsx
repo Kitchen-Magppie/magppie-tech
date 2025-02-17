@@ -48,9 +48,8 @@ export default function Home() {
             <h1 className='text-2xl  text-white mb-2  x-font-exo-300'>
               Wellness Kitchen
             </h1>
-
             {/* Subtitle */}
-            <div className='text-white/90 mt-60 text-lg x-font-barlow-semi-condensed-400'>
+            <div className='text-white/90 mt-64 text-lg x-font-barlow-semi-condensed-400'>
               Welcome to the wellness movement
             </div>
           </div>
@@ -81,7 +80,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        {/* <hr className='bg-black' /> */}
+        <hr className='bg-black' />
       </MobileLayout>
       <Categories />
       <div className='max-w-sm mx-auto overflow-hidden'>
