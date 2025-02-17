@@ -14,3 +14,11 @@ export type TCategoryItem = {
   videoUrl: string;
   desc: string;
 };
+
+export type TOnGoingItem = {
+  id: number;
+  title: string;
+  subTitle: string;
+  videoUrl: string;
+  desc: string;
+};
