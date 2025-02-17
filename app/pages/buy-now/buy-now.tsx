@@ -4,7 +4,7 @@ import theChefOne from '~/assets/images/the-chef/the-chef-1.png';
 import theChefTwo from '~/assets/images/the-chef/the-chef-2.png';
 import theChefThree from '~/assets/images/the-chef/the-chef-3.png';
 
-import { MobileLayout } from '~/components';
+import { MobileLayout } from './components/mobile-layout';
 import { Link } from '@remix-run/react';
 import { ButtonsMenu } from './components/buttons-menu'; // Import FloatingMenu component
 

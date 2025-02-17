@@ -1,6 +1,7 @@
 // =================================================
 import AssetVideoIntroduction from '~/assets/videos/home-intro.mp4';
 import {
+  AboutUs,
   BuyOnline,
   Categories,
   CategoryCardItem,
@@ -90,6 +91,8 @@ export default function Home() {
       <BuyOnline />
 
       <Clients />
+
+      <AboutUs />
     </div>
   );
 }

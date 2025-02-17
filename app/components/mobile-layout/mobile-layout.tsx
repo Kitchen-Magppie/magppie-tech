@@ -3,7 +3,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 // =========================================================
 
-// import { MobileNavBar } from '~/components';
+import { MobileNavBar } from '~/components';
 
 export function MobileLayout({ children }: TProps) {
   return (
@@ -12,7 +12,7 @@ export function MobileLayout({ children }: TProps) {
         {title}
       </div> */}
       {children}
-      {/* <MobileNavBar /> */}
+      <MobileNavBar />
     </div>
   );
 }
