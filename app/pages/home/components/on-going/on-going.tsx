@@ -31,14 +31,14 @@ export function OnGoing(props: TProps) {
         </video>
         {/* Overlay Text */}
         <div className='absolute inset-0 flex flex-col items-center justify-center text-white text-center'>
-          <span className='text-sm'>wellness kitchen</span>
-          <h2 className='text-5xl font-semibold italic leading-tight'>
+          <span className='text-md mb-1'>wellness kitchen</span>
+          <h2 className='text-5xl font-semibold italic leading-tight x-font-noto-serif-display-600-italic mb-1'>
             ongoing <br /> project
           </h2>
-          <span className='text-sm'>@dubai</span>
+          <span className='text-md'>@dubai</span>
         </div>
 
-        <div className='absolute inset-0 bg-black bg-opacity-20 rounded-3xl'></div>
+        <div className='absolute inset-0 bg-black bg-opacity-10 rounded-3xl'></div>
       </div>
       {/* Icon Actions - Aligned to Start */}
       <div className='flex justify-start px-3 py-4 w-full text-gray-500 gap-6'>
