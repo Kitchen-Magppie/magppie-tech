@@ -5,6 +5,7 @@ import {
   BuyOnline,
   Categories,
   CategoryCardItem,
+  Team,
 } from '~/pages/home/components';
 import { MobileLayout } from '~/components';
 import { CATEGORY_MOCK_DATA } from '~/mocks';
@@ -93,6 +94,8 @@ export default function Home() {
       <Clients />
 
       <AboutUs />
+
+      <Team />
     </div>
   );
 }
