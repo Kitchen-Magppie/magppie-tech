@@ -8,11 +8,8 @@ export function Clients() {
         Our Clients
       </h2>
       <div className='grid grid-cols-2 gap-4 columns-2'>
-        {clients.map((client, index) => (
-          <div
-            key={index}
-            className='w-full bg-white rounded-lg overflow-hidden'
-          >
+        {clients.map((client, i) => (
+          <div key={i} className='w-full bg-white rounded-lg overflow-hidden'>
             <img
               src={client.src}
               alt={client.title}
