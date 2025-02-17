@@ -13,10 +13,12 @@ export function AiMagppie() {
 
   return (
     <div className='flex flex-col items-center p-4 space-y-6 text-center mt-6'>
-      <h2 className='text-4xl italic font-semibold'>Whats new!</h2>
+      <h2 className='text-4xl italic  x-font-noto-serif-display-400-italic'>
+        Whats new!
+      </h2>
 
       <div className='flex flex-col items-center space-y-2'>
-        <div className='w-20 h-20 flex items-center justify-center bg-gray-200 rounded-full text-2xl font-semibold mb-2'>
+        <div className='w-20 h-20 flex items-center justify-center bg-gray-200 rounded-full text-2xl mb-2 x-font-barlow-semi-condensed-400'>
           aiM
         </div>
         <h3 className='text-3xl font-bold mb-2'>
