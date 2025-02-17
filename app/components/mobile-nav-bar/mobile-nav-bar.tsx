@@ -1,35 +1,23 @@
-import { ReactNode } from 'react';
-import { Home, Droplets, User, MoreHorizontal } from 'lucide-react';
+import { Icon } from '@iconify/react';
 // =========================================================
-import { Button } from '~/components/ui/button';
+import { NAVIGATION_OPTIONS } from '~/mocks';
 
 export function MobileNavBar() {
   return (
     <nav className='fixed bottom-4 left-1/2 -translate-x-1/2 h-14 bg-white/80 backdrop-blur-md rounded-full px-6 shadow-lg z-50'>
       <div className='flex items-center h-full gap-8'>
-        <NavItem icon={<Home className='h-5 w-5' />} isActive />
-        <NavItem icon={<Droplets className='h-5 w-5' />} />
-        <NavItem icon={<User className='h-5 w-5' />} />
-        <NavItem icon={<MoreHorizontal className='h-5 w-5' />} />
+        {NAVIGATION_OPTIONS?.map((item, i) => {
+          return (
+            <Icon
+              icon={item.icon}
+              className={`hover:bg-transparent w-8 h-8  ${
+                !i ? 'text-neutral-600' : 'text-neutral-400'
+              }`}
+              key={i}
+            />
+          );
+        })}
       </div>
     </nav>
   );
-}
-
-function NavItem({ icon, isActive }: TProps) {
-  return (
-    <Button
-      variant='ghost'
-      size='icon'
-      className={`hover:bg-transparent ${
-        isActive ? 'text-emerald-600' : 'text-neutral-600'
-      }`}
-    >
-      {icon}
-    </Button>
-  );
-}
-interface TProps {
-  icon: ReactNode;
-  isActive?: boolean;
 }
