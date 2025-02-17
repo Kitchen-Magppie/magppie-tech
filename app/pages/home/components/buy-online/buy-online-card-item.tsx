@@ -34,8 +34,8 @@ export function BuyOnlineCardItem(props: TProps) {
         >
           {data.images.map((image, i) => (
             <SwiperSlide key={i}>
-              <div className='h-[600px] '>
-                <div className='h-[450px] '>
+              <div className='h-[600px]'>
+                <div className='h-[450px]'>
                   <div
                     style={{ background: `url(${image})` }}
                     className='w-full h-full object-cover x-font-barlow-semi-condensed-100 overflow-hidden relative  rounded-2xl'
