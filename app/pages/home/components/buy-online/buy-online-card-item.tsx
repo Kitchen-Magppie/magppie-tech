@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 // =================================================
 import classes from './buy-online-card-item.module.css';
@@ -25,39 +25,50 @@ export function BuyOnlineCardItem(props: TProps) {
       <div className='relative'>
         <Swiper
           navigation
-          modules={[Navigation]}
+          modules={[Navigation, Pagination]}
+          pagination
           // pagination={{
           //   dynamicBullets: false,
           // }}
-          className={`w-full h-[500px] rounded-2xl ${classes.BuyOnlineCardSwiper}`}
+          className={`w-full h-[500px]  ${classes.BuyOnlineCardSwiper}`}
         >
           {data.images.map((image, i) => (
             <SwiperSlide key={i}>
-              <div
-                style={{ background: `url(${image})` }}
-                className='w-full h-full object-cover x-font-barlow-semi-condensed-100 overflow-hidden relative'
-              >
-                {/* <img
+              <div className='h-[600px]'>
+                <div className='h-[450px]'>
+                  <div
+                    style={{
+                      background: `url(${image})`,
+                      objectFit: 'cover', // Temp code
+                      backgroundSize: '700px', // temp code;
+                    }}
+                    className='w-full h-full  x-font-barlow-semi-condensed-100 overflow-hidden relative  rounded-2xl'
+                  >
+                    {/* <img
                   src={image}
                   alt={`${data.title} ${i + 1}`}
                   className='w-full h-full object-cover rounded-t-lg'
                 /> */}
-                <div>
-                  <div className='bg-transparent absolute bottom-0 left-0 right-0 '>
-                    <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white p-3 flex justify-between items-center'>
-                      <div className='flex justify-center gap-1'>
-                        <div className=' text-2xl'>$</div>
-                        <div className='flex flex-col justify-start'>
-                          <div className='text-xl font-light'>
-                            {data.amount}
+                    <div className=''>
+                      <div className='bg-transparent absolute bottom-0 left-0 right-0 '>
+                        <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white p-3 flex justify-between items-center'>
+                          <div className='flex justify-center gap-1'>
+                            <div className=' text-2xl'>$</div>
+                            <div className='flex flex-col justify-start'>
+                              <div className='text-xl font-light'>
+                                {data.amount}
+                              </div>
+                              <div className='text-xs font-semibold'>
+                                onwards
+                              </div>
+                            </div>
                           </div>
-                          <div className='text-xs font-semibold'>onwards</div>
+
+                          <button className='bg-white text-black font-semibold  px-6 py-2 rounded-full text-sm '>
+                            buy now
+                          </button>
                         </div>
                       </div>
-
-                      <button className='bg-white text-black font-semibold  px-6 py-2 rounded-full text-sm '>
-                        buy now
-                      </button>
                     </div>
                   </div>
                 </div>
