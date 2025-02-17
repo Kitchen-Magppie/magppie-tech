@@ -13,7 +13,7 @@ export function AiMagppie() {
 
   return (
     <div className='flex flex-col items-center p-4 space-y-6 text-center mt-6'>
-      <h2 className='text-4xl italic  x-font-noto-serif-display-400-italic'>
+      <h2 className='text-4xl  x-font-noto-serif-display-600-italic'>
         Whats new!
       </h2>
 
