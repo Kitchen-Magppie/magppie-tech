@@ -1,12 +1,14 @@
 // =================================================
 import AssetVideoIntroduction from '~/assets/videos/home-intro.mp4';
 import {
+  AboutUs,
   BuyOnline,
   Categories,
   CategoryCardItem,
 } from '~/pages/home/components';
 import { MobileLayout } from '~/components';
 import { CATEGORY_MOCK_DATA } from '~/mocks';
+import { Clients } from './components/clients';
 
 export default function Home() {
   return (
@@ -31,7 +33,7 @@ export default function Home() {
           <div className='absolute inset-0 bg-black bg-opacity-50 rounded-bl-3xl rounded-br-3xl'></div>
 
           {/* Content Overlay */}
-          <div className='relative flex flex-col items-center pt-8 px-6 text-center'>
+          <div className='relative flex flex-col items-center pt-16 px-6 text-center'>
             {/* Logo */}
             <div className='w-24 h-24 bg-white rounded-full flex items-center justify-center mb-4'>
               <span className='text-emerald-900 font-bold text-lg'>
@@ -87,6 +89,10 @@ export default function Home() {
       <hr className='bg-black' />
 
       <BuyOnline />
+
+      <Clients />
+
+      <AboutUs />
     </div>
   );
 }
