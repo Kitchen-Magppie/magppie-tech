@@ -1,7 +1,6 @@
 import { Icon } from '@iconify/react';
 // =========================================================
 import { NAVIGATION_OPTIONS } from '~/mocks';
-import { MobileNavItem } from './mobile-nav-item';
 
 export function MobileNavBar() {
   return (
@@ -9,10 +8,12 @@ export function MobileNavBar() {
       <div className='flex items-center h-full gap-8'>
         {NAVIGATION_OPTIONS?.map((item, i) => {
           return (
-            <MobileNavItem
+            <Icon
+              icon={item.icon}
+              className={`hover:bg-transparent w-8 h-8  ${
+                !i ? 'text-neutral-600' : 'text-neutral-400'
+              }`}
               key={i}
-              icon={<Icon icon={item.icon} className='h-5 w-5' />}
-              isActive={!i} // NOTE: To active first item only;
             />
           );
         })}
