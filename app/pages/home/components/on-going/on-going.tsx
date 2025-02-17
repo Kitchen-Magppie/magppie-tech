@@ -13,12 +13,12 @@ export function OnGoing(props: TProps) {
         <div className='w-14 h-14 px-1 bg-[#354755] text-white text-[10px] font-bold flex items-center justify-center rounded-full'>
           MAGPPIE
         </div>
-        <span className='text-gray-900  text-medium x-font-barlow-semi-condensed-400'>
+        <span className='text-gray-900 text-medium x-font-barlow-semi-condensed-400'>
           wellness kitchen
         </span>
       </div>
       {/* Video Section with Rounded Borders */}
-      <div className='relative rounded-2xl overflow-hidden'>
+      <div className='relative rounded-3xl overflow-hidden'>
         <video
           className='w-full h-[600px] object-cover'
           autoPlay
@@ -29,6 +29,16 @@ export function OnGoing(props: TProps) {
           <source src={data.videoUrl} type='video/mp4' />
           Your browser does not support the video tag.
         </video>
+        {/* Overlay Text */}
+        <div className='absolute inset-0 flex flex-col items-center justify-center text-white text-center'>
+          <span className='text-sm'>wellness kitchen</span>
+          <h2 className='text-5xl font-semibold italic leading-tight'>
+            ongoing <br /> project
+          </h2>
+          <span className='text-sm'>@dubai</span>
+        </div>
+
+        <div className='absolute inset-0 bg-black bg-opacity-20 rounded-3xl'></div>
       </div>
       {/* Icon Actions - Aligned to Start */}
       <div className='flex justify-start px-3 py-4 w-full text-gray-500 gap-6'>
@@ -46,7 +56,7 @@ export function OnGoing(props: TProps) {
       </div>
       {/* Content Section */}
       <div className='px-3 pb-6'>
-        <h3 className='text-lg  x-font-barlow-semi-condensed-500'>
+        <h3 className='text-lg x-font-barlow-semi-condensed-500'>
           {data.subTitle}
         </h3>
         <p className='text-sm text-gray-700 mt-1'>{data.desc}</p>
