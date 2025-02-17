@@ -1,10 +1,11 @@
 import { Icon } from '@iconify/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import 'swiper/css/pagination';
 // =================================================
+import classes from './buy-online-card-item.module.css';
 import { TBuyOnlineItem } from '~/types';
 import { CARD_ACTION_OPTIONS } from '~/mocks';
-
 export function BuyOnlineCardItem(props: TProps) {
   const { data } = props;
 
@@ -25,7 +26,10 @@ export function BuyOnlineCardItem(props: TProps) {
         <Swiper
           navigation
           modules={[Navigation]}
-          className={`w-full h-[400px] rounded-xl  `}
+          // pagination={{
+          //   dynamicBullets: false,
+          // }}
+          className={`w-full h-[500px] rounded-2xl ${classes.BuyOnlineCardSwiper}`}
         >
           {data.images.map((image, i) => (
             <SwiperSlide key={i}>
