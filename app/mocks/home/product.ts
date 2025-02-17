@@ -1,6 +1,7 @@
 import ProductCategoriesOne from '~/assets/videos/product-categories1.mp4';
 import ProductCategoriesTwo from '~/assets/videos/product-categories-2.mp4';
-import { TCategoryItem } from '~/types';
+import onGoing from '~/assets/videos/on-going.mp4';
+import { TCategoryItem, TOnGoingItem } from '~/types';
 
 export const CATEGORY_MOCK_DATA: TCategoryItem[] = [
   {
@@ -24,4 +25,14 @@ export const CARD_ACTION_OPTIONS = [
   { value: 'line-md:phone', label: 'call us' },
   { value: 'bitcoin-icons:share-outline', label: 'share' },
   { value: 'material-symbols:bookmark-outline-rounded', label: 'save' },
+];
+
+export const ONGOING_MOCK_DAtA: TOnGoingItem[] = [
+  {
+    id: 1,
+    title: 'Wellness Kitchens',
+    subTitle: 'Fiona Wellness Kitchen',
+    videoUrl: onGoing,
+    desc: 'Magppie wellness kitchen being set up in Dubai, expected to be handed-over in January 2025',
+  },
 ];

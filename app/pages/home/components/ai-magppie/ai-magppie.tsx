@@ -32,7 +32,7 @@ export function AiMagppie() {
         className='flex flex-col items-center space-x-2 text-gray-800 hover:underline'
       >
         <div className='font-light'>
-        <Icon icon="iwwa:arrow-right" width="100" height="80" />
+          <Icon icon='iwwa:arrow-right' width='100' height='80' />
         </div>
         <span className='text-xl'>Explore</span>
       </Link>
@@ -50,6 +50,15 @@ export function AiMagppie() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className='flex flex-col items-center gap-2 p-4'>
+        <h2 className='text-4xl font-semibold x-font-noto-serif-display-600-italic mt-2 mb-4'>
+          get inspired
+        </h2>
+        <span className='text-gray-900  text-medium x-font-barlow-semi-condensed-400'>
+          and request us to create
+        </span>
       </div>
     </div>
   );

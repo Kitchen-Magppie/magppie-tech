@@ -6,10 +6,11 @@ import {
   BuyOnline,
   Categories,
   CategoryCardItem,
+  OnGoing,
   Team,
 } from '~/pages/home/components';
 import { MobileLayout } from '~/components';
-import { CATEGORY_MOCK_DATA } from '~/mocks';
+import { CATEGORY_MOCK_DATA, ONGOING_MOCK_DAtA } from '~/mocks';
 import { Clients } from './components/clients';
 
 export default function Home() {
@@ -103,6 +104,14 @@ export default function Home() {
       <hr className='bg-black' />
 
       <AiMagppie />
+
+      <hr className='bg-black' />
+
+      <div className='max-w-sm mx-auto overflow-hidden'>
+        {ONGOING_MOCK_DAtA.map((data, i) => (
+          <OnGoing data={data} key={i} />
+        ))}
+      </div>
     </div>
   );
 }
