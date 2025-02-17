@@ -20,7 +20,7 @@ export function Clients() {
               style={{ height: client.height }} // Dynamic height from data
             />
             <div className='p-2'>
-              <h3 className='font-semibold text-md'>{client.title}</h3>
+              <h3 className='font-semibold text-sm'>{client.title}</h3>
               <p className='text-sm text-gray-600'>{client.subTitle}</p>
             </div>
           </div>
