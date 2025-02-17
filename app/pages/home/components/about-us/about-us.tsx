@@ -2,7 +2,7 @@ import intro from '~/assets/videos/intro.mp4';
 
 export function AboutUs() {
   return (
-    <div className='flex flex-col items-center px-4 py-6'>
+    <div className='flex flex-col items-center px-4 py-6 mt-6'>
       <h2 className='text-3xl font-semibold italic text-center mb-5'>About us</h2>
       <p className='text-md text-center text-gray-600 mb-4'>the wellness vision</p>
 

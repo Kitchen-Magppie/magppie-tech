@@ -4,3 +4,4 @@ export * from './category-card-item';
 export * from './about-us';
 export * from './clients';
 export * from './team';
+export * from './ai-magppie';

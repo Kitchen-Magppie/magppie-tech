@@ -2,6 +2,7 @@
 import AssetVideoIntroduction from '~/assets/videos/home-intro.mp4';
 import {
   AboutUs,
+  AiMagppie,
   BuyOnline,
   Categories,
   CategoryCardItem,
@@ -93,9 +94,15 @@ export default function Home() {
 
       <Clients />
 
+      <hr className='bg-black' />
+
       <AboutUs />
 
       <Team />
+
+      <hr className='bg-black' />
+
+      <AiMagppie />
     </div>
   );
 }

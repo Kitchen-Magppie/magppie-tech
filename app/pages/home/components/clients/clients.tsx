@@ -1,9 +1,10 @@
+import { Link } from '@remix-run/react';
 import { clients } from './data';
 
 export function Clients() {
   return (
     <section className='px-4 py-8'>
-      <h2 className='text-center text-2xl font-semibold italic mb-6'>
+      <h2 className='text-center text-4xl font-semibold italic mb-6'>
         Our Clients
       </h2>
       <div className='grid grid-cols-2 gap-4 columns-2'>
@@ -25,6 +26,13 @@ export function Clients() {
           </div>
         ))}
       </div>
+
+      <Link
+        to='/team'
+        className='mt-6 text-sm font-medium flex justify-center text-gray-600 underline'
+      >
+        see more clients
+      </Link>
     </section>
   );
 }
