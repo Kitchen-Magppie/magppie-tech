@@ -22,7 +22,7 @@ export const CATEGORY_MOCK_DATA: TCategoryItem[] = [
 
 export const CARD_ACTION_OPTIONS = [
   { value: 'uil:chat', label: 'chat' },
-  { value: 'line-md:phone', label: 'call us' },
+  { value: 'mingcute:phone-line', label: 'call us' },
   { value: 'bitcoin-icons:share-outline', label: 'share' },
   { value: 'material-symbols:bookmark-outline-rounded', label: 'save' },
 ];
