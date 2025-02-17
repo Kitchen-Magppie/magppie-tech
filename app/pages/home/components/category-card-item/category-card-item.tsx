@@ -24,11 +24,11 @@ export function CategoryCardItem(props: TProps) {
           MAGPPIE
         </div>
         {/* Overlay with Text */}
-        <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white p-3 flex justify-between items-center'>
+        <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white border-t-2 p-3 flex justify-between items-center'>
           <span className='text-lg x-font-barlow-semi-condensed-400'>
             {data.title}
           </span>
-          <Icon icon='uil:arrow-right' className='w-5 h-5' />
+          <Icon icon='iconamoon:arrow-right-2-thin' className='h-10 w-10' />
         </div>
       </div>
       {/* Icon Actions - Aligned to Start */}
@@ -36,9 +36,9 @@ export function CategoryCardItem(props: TProps) {
         {CARD_ACTION_OPTIONS?.map((item, i) => {
           return (
             <div className='flex flex-col items-center gap-1' key={i}>
-              <Icon icon={item.value} className='w-5 h-5' />
+              <Icon icon={item.value} className='w-8 h-8' />
 
-              <span className='text-xs x-font-barlow-semi-condensed-400'>
+              <span className='text-sm x-font-barlow-semi-condensed-400'>
                 {item.label}
               </span>
             </div>

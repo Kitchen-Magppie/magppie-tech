@@ -45,9 +45,9 @@ export function OnGoing(props: TProps) {
         {CARD_ACTION_OPTIONS?.map((item, i) => {
           return (
             <div className='flex flex-col items-center gap-1' key={i}>
-              <Icon icon={item.value} className='w-5 h-5' />
+              <Icon icon={item.value} className='w-8 h-8' />
 
-              <span className='text-xs x-font-barlow-semi-condensed-400'>
+              <span className='text-sm x-font-barlow-semi-condensed-400'>
                 {item.label}
               </span>
             </div>

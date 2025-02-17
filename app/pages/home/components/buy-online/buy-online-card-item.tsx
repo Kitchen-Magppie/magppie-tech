@@ -94,8 +94,8 @@ export function BuyOnlineCardItem(props: TProps) {
         {CARD_ACTION_OPTIONS?.map((item, i) => {
           return (
             <div className='flex flex-col items-center gap-1' key={i}>
-              <Icon icon={item.value} className='w-5 h-5' />
-              <span className='text-xs'>{item.label}</span>
+              <Icon icon={item.value} className='w-8 h-8' />
+              <span className='text-sm'>{item.label}</span>
             </div>
           );
         })}
