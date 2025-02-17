@@ -93,15 +93,39 @@ export function BuyOnlineCardItem(props: TProps) {
       {/* Action Icons */}
       <div className='flex justify-start gap-6 px-4 py-3 text-gray-500'>
         {CARD_ACTION_OPTIONS?.map((item, i) => {
+          const getAction = () => {
+            switch (item.label) {
+              case 'chat':
+                return (
+                  <ChatComingSoonDialog>
+                    <Icon
+                      icon={item.value}
+                      className='w-8 h-8 cursor-pointer'
+                    />
+                  </ChatComingSoonDialog>
+                );
+
+              case 'call us':
+                return (
+                  <Icon
+                    icon={item.value}
+                    onClick={() => {
+                      const phoneNumber = '+911234567890';
+                      window.location.href = `tel:${phoneNumber}`;
+                    }}
+                    className='w-8 h-8 cursor-pointer'
+                  />
+                );
+
+              default:
+                return (
+                  <Icon icon={item.value} className='w-8 h-8 cursor-pointer' />
+                );
+            }
+          };
           return (
             <div className='flex flex-col items-center gap-1' key={i}>
-              {item.label === 'chat' ? (
-                <ChatComingSoonDialog>
-                  <Icon icon={item.value} className='w-8 h-8' />
-                </ChatComingSoonDialog>
-              ) : (
-                <Icon icon={item.value} className='w-8 h-8' />
-              )}
+              {getAction()}
 
               <span className='text-sm'>{item.label}</span>
             </div>
