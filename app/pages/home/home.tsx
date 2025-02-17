@@ -92,6 +92,8 @@ export default function Home() {
 
       <BuyOnline />
 
+      <hr className='bg-black' />
+
       <Clients />
 
       <hr className='bg-black' />

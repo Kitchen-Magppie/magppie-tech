@@ -19,7 +19,7 @@ export function BuyOnlineCardItem(props: TProps) {
           MAGPPIE
         </div>
         <span className='text-gray-900  text-medium x-font-barlow-semi-condensed-400'>
-          wellness kitchen
+          {data.heading}
         </span>
       </div>
 
