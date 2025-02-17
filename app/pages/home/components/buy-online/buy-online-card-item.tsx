@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 import classes from './buy-online-card-item.module.css';
 import { TBuyOnlineItem } from '~/types';
 import { CARD_ACTION_OPTIONS } from '~/mocks';
+import { ChatComingSoonDialog } from '~/components';
 
 export function BuyOnlineCardItem(props: TProps) {
   const { data } = props;
@@ -94,7 +95,14 @@ export function BuyOnlineCardItem(props: TProps) {
         {CARD_ACTION_OPTIONS?.map((item, i) => {
           return (
             <div className='flex flex-col items-center gap-1' key={i}>
-              <Icon icon={item.value} className='w-8 h-8' />
+              {item.label === 'chat' ? (
+                <ChatComingSoonDialog>
+                  <Icon icon={item.value} className='w-8 h-8' />
+                </ChatComingSoonDialog>
+              ) : (
+                <Icon icon={item.value} className='w-8 h-8' />
+              )}
+
               <span className='text-sm'>{item.label}</span>
             </div>
           );

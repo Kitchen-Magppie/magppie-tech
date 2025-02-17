@@ -1,4 +1,5 @@
 import { Icon } from '@iconify/react';
+import { ChatComingSoonDialog } from '~/components';
 import { CARD_ACTION_OPTIONS } from '~/mocks';
 
 import { TCategoryItem } from '~/types';
@@ -36,8 +37,13 @@ export function CategoryCardItem(props: TProps) {
         {CARD_ACTION_OPTIONS?.map((item, i) => {
           return (
             <div className='flex flex-col items-center gap-1' key={i}>
-              <Icon icon={item.value} className='w-8 h-8' />
-
+              {item.label === 'chat' ? (
+                <ChatComingSoonDialog>
+                  <Icon icon={item.value} className='w-8 h-8' />
+                </ChatComingSoonDialog>
+              ) : (
+                <Icon icon={item.value} className='w-8 h-8' />
+              )}
               <span className='text-sm x-font-barlow-semi-condensed-400'>
                 {item.label}
               </span>
