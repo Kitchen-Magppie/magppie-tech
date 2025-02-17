@@ -35,15 +35,39 @@ export function CategoryCardItem(props: TProps) {
       {/* Icon Actions - Aligned to Start */}
       <div className='flex justify-start px-3 py-4 w-full text-gray-500 gap-6'>
         {CARD_ACTION_OPTIONS?.map((item, i) => {
+          const getAction = () => {
+            switch (item.label) {
+              case 'chat':
+                return (
+                  <ChatComingSoonDialog>
+                    <Icon
+                      icon={item.value}
+                      className='w-8 h-8 cursor-pointer'
+                    />
+                  </ChatComingSoonDialog>
+                );
+
+              case 'call us':
+                return (
+                  <Icon
+                    icon={item.value}
+                    onClick={() => {
+                      const phoneNumber = '+911234567890';
+                      window.location.href = `tel:${phoneNumber}`;
+                    }}
+                    className='w-8 h-8 cursor-pointer'
+                  />
+                );
+
+              default:
+                return (
+                  <Icon icon={item.value} className='w-8 h-8 cursor-pointer' />
+                );
+            }
+          };
           return (
             <div className='flex flex-col items-center gap-1' key={i}>
-              {item.label === 'chat' ? (
-                <ChatComingSoonDialog>
-                  <Icon icon={item.value} className='w-8 h-8' />
-                </ChatComingSoonDialog>
-              ) : (
-                <Icon icon={item.value} className='w-8 h-8' />
-              )}
+              {getAction()}
               <span className='text-sm x-font-barlow-semi-condensed-400'>
                 {item.label}
               </span>
