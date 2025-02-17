@@ -4,11 +4,8 @@ import chiranjeevi from '~/assets/images/clients/chirnjeevi.png';
 import dhoni from '~/assets/images/clients/dhoni.png';
 import harbajan from '~/assets/images/clients/hrbhjn.png';
 import sussne from '~/assets/images/clients/sussne.jfif';
-// import subhash from '../../../kitchen-dweb/assets/clients/subhash.png';
 import sunil from '~/assets/images/clients/sunil-bhrti.png';
-// import vandana from '../../../kitchen-dweb/assets/clients/vandana.png';
 import natasha from '~/assets/images/clients/natasha.png';
-// import priya from '../../../kitchen-dweb/assets/clients/priya.png';
 
 export const clients = [
   {
@@ -16,28 +13,28 @@ export const clients = [
     src: dhoni,
     height: '300px',
     title: 'MS Dhoni',
-    subTitle: 'Cricket Captain',
+    subTitle: 'Ex-Captain, Indian Cricket Team',
   },
   {
     id: 2,
     src: ranbir,
     height: '500px',
     title: 'Ranbir Kapoor',
-    subTitle: 'Actor',
+    subTitle: 'Bollywood Superstar',
   },
   {
     id: 3,
     src: harbajan,
     height: '300px',
     title: 'Harbhajan Singh',
-    subTitle: 'Cricketer',
+    subTitle: 'Cricketer, Indian Team',
   },
   {
     id: 4,
     src: chiranjeevi,
     height: '300px',
     title: 'Chiranjeevi',
-    subTitle: 'Actor',
+    subTitle: 'Bollywood Superstar',
   },
   {
     id: 5,
@@ -53,29 +50,13 @@ export const clients = [
     title: 'Arshad Warsi',
     subTitle: 'Actor',
   },
-  //   {
-    //     id: 6,
-    //     src: vandana,
-    //     colSpan: 1,
-    //     rowSpan: 1,
-  //     title: 'Vandana Munjal',
-  //     subTitle: 'Owner, Hero',
-  //   },
   {
     id: 7,
     src: sunil,
     height: '300px',
     title: 'Sunil Bharti Mittal',
-    subTitle: 'Owner, Airtel',
+    subTitle: 'Founder & CEO, Airtel',
   },
-  //   {
-  //     id: 8,
-  //     src: priya,
-  //     colSpan: 1,
-  //     rowSpan: 1,
-  //     title: 'Priya Paul',
-  //     subTitle: 'Chairperson, Park',
-  //   },
   {
     id: 8,
     src: natasha,
@@ -83,22 +64,4 @@ export const clients = [
     title: 'Natasha Poonawala',
     subTitle: 'Philanthropist',
   },
-  //   {
-  //     id: 10,
-  //     src: kamal,
-  //     colSpan: 1,
-  //     rowSpan: 1,
-  //     title: 'Kamal Nath',
-  //     subTitle: 'Member of Parliament, India',
-  //     height: 1,
-  //   },
-  //   {
-  //     id: 11,
-  //     src: subhash,
-  //     colSpan: 1,
-  //     rowSpan: 1,
-  //     title: 'Subhash Chandra',
-  //     subTitle: 'Chairman, ZeeTv',
-  //     height: 1,
-  //   },
 ];

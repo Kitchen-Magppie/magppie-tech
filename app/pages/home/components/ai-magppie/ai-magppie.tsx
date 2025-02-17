@@ -45,7 +45,7 @@ export function AiMagppie() {
               alt='Outdoor Kitchen 1'
               className='w-full h-auto'
             />
-            <div className='absolute bottom-2 right-2 bg-white rounded-full px-2 py-1 text-gray-700 text-xs font-semibold'>
+            <div className='absolute bottom-2 right-2 bg-white rounded-full px-2.5 py-3 text-gray-700 text-xs font-semibold'>
               aiM
             </div>
           </div>
