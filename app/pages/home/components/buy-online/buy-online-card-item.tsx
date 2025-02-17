@@ -37,8 +37,12 @@ export function BuyOnlineCardItem(props: TProps) {
               <div className='h-[600px]'>
                 <div className='h-[450px]'>
                   <div
-                    style={{ background: `url(${image})` }}
-                    className='w-full h-full object-cover x-font-barlow-semi-condensed-100 overflow-hidden relative  rounded-2xl'
+                    style={{
+                      background: `url(${image})`,
+                      objectFit: 'cover', // Temp code
+                      backgroundSize: '700px', // temp code;
+                    }}
+                    className='w-full h-full  x-font-barlow-semi-condensed-100 overflow-hidden relative  rounded-2xl'
                   >
                     {/* <img
                   src={image}
