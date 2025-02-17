@@ -6,12 +6,13 @@ import 'swiper/css/pagination';
 import classes from './buy-online-card-item.module.css';
 import { TBuyOnlineItem } from '~/types';
 import { CARD_ACTION_OPTIONS } from '~/mocks';
+import { ChatComingSoonDialog } from '~/components';
+
 export function BuyOnlineCardItem(props: TProps) {
   const { data } = props;
 
   return (
     <div>
-      
       {/* Header */}
       <div className='flex items-center gap-2 p-4'>
         <div className='w-14 h-14 bg-[#354755] text-white text-[10px] font-bold flex items-center justify-center rounded-full'>
@@ -94,7 +95,14 @@ export function BuyOnlineCardItem(props: TProps) {
         {CARD_ACTION_OPTIONS?.map((item, i) => {
           return (
             <div className='flex flex-col items-center gap-1' key={i}>
-              <Icon icon={item.value} className='w-8 h-8' />
+              {item.label === 'chat' ? (
+                <ChatComingSoonDialog>
+                  <Icon icon={item.value} className='w-8 h-8' />
+                </ChatComingSoonDialog>
+              ) : (
+                <Icon icon={item.value} className='w-8 h-8' />
+              )}
+
               <span className='text-sm'>{item.label}</span>
             </div>
           );
@@ -109,12 +117,12 @@ export function BuyOnlineCardItem(props: TProps) {
         <p className='text-sm text-left text-gray-700 mt-1 x-font-barlow-semi-condensed-300'>
           {data.desc}
         </p>
-        <a
-          href='/wardrobes'
-          className=' text-gray-500 font-medium text-sm mt-2 inline-block underline'
+        <div
+          // href='/wardrobes'
+          className=' text-gray-500 font-medium text-sm mt-2 inline-block underline cursor-pointer'
         >
           see all wellness kitchens
-        </a>
+        </div>
       </div>
     </div>
   );
