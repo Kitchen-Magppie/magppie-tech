@@ -7,7 +7,7 @@ export function Clients() {
       <h2 className='text-center text-4xl x-font-noto-serif-display-600-italic mb-6'>
         Our Clients
       </h2>
-      <div className='grid grid-cols-2 gap-4 columns-2'>
+      <div className='grid grid-cols-2 gap-4'>
         {clients.map((client, index) => (
           <div
             key={index}
@@ -20,8 +20,8 @@ export function Clients() {
               style={{ height: client.height }} // Dynamic height from data
             />
             <div className='p-2'>
-              <h3 className='font-semibold text-sm'>{client.title}</h3>
-              <p className='text-xs text-gray-600'>{client.subTitle}</p>
+              <h3 className='font-semibold text-md'>{client.title}</h3>
+              <p className='text-sm text-gray-600'>{client.subTitle}</p>
             </div>
           </div>
         ))}
