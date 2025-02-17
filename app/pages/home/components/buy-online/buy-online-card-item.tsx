@@ -11,10 +11,11 @@ export function BuyOnlineCardItem(props: TProps) {
 
   return (
     <div>
+      
       {/* Header */}
       <div className='flex items-center gap-2 p-4'>
-        <div className='w-12 h-12 bg-[#354755] text-white text-[10px] font-bold flex items-center justify-center rounded-full'>
-          MAGPIE
+        <div className='w-14 h-14 bg-[#354755] text-white text-[10px] font-bold flex items-center justify-center rounded-full'>
+          MAGPPIE
         </div>
         <span className='text-gray-900  text-medium x-font-barlow-semi-condensed-400'>
           wellness kitchen
