@@ -2,7 +2,8 @@ import { Link } from '@remix-run/react';
 import newOne from '~/assets/images/new-one.png';
 import newTwo from '~/assets/images/new-two.png';
 import newThree from '~/assets/images/new-three.png';
-import { Icon } from '@iconify/react';
+// import { Icon } from '@iconify/react';
+import arrow from "~/assets/images/rrow.png"
 
 export function AiMagppie() {
   const images = [
@@ -13,18 +14,18 @@ export function AiMagppie() {
 
   return (
     <div className='flex flex-col items-center p-4 space-y-6 text-center mt-6'>
-      <h2 className='text-4xl  x-font-noto-serif-display-600-italic'>
-        Whats new!
+      <h2 className='text-[36px] x-font-noto-serif-display-600-italic font-normal'>
+        {`What's new!`}
       </h2>
 
       <div className='flex flex-col items-center space-y-2'>
-        <div className='w-20 h-20 flex items-center justify-center bg-gray-200 rounded-full text-2xl mb-2 x-font-barlow-semi-condensed-400'>
+        <div className='w-20 h-20 flex items-center justify-center bg-gray-200 rounded-full text-[32px] mb-2 x-font-barlow-semi-condensed-400'>
           aiM
         </div>
-        <h3 className='text-3xl font-bold mb-2'>
+        <h3 className='text-[32px] font-bold mb-2'>
           ai<span className='text-gray-800'>MAGPPIE</span>
         </h3>
-        <p className='text-gray-600'>
+        <p className='text-gray-600 text-[16px]'>
           Kitchen inspirations curated by Magppie Ai Labs
         </p>
       </div>
@@ -34,9 +35,9 @@ export function AiMagppie() {
         className='flex flex-col items-center space-x-2 text-gray-800 hover:underline'
       >
         <div className='font-light'>
-          <Icon icon='iwwa:arrow-right' width='100' height='80' />
+          <img src={arrow} alt="" />
         </div>
-        <span className='text-xl'>Explore</span>
+        <span className='text-[18px] mt-3'>Explore</span>
       </Link>
 
       <div className='space-y-4'>
@@ -55,10 +56,10 @@ export function AiMagppie() {
       </div>
 
       <div className='flex flex-col items-center gap-2 p-4'>
-        <h2 className='text-4xl font-semibold x-font-noto-serif-display-600-italic mt-2 mb-4'>
+        <h2 className='text-[42px] font-normal x-font-noto-serif-display-600-italic mt-2 mb-4'>
           get inspired
         </h2>
-        <span className='text-gray-900  text-medium x-font-barlow-semi-condensed-400'>
+        <span className='text-gray-900  text-[18px] x-font-barlow-semi-condensed-400'>
           and request us to create
         </span>
       </div>

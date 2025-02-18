@@ -36,20 +36,21 @@ export default function Home() {
           <div className='absolute inset-0 bg-black bg-opacity-50 rounded-bl-3xl rounded-br-3xl'></div>
 
           {/* Content Overlay */}
-          <div className='relative flex flex-col items-center pt-16 px-6 text-center'>
-            {/* Logo */}
-            <div className='w-24 h-24 bg-white rounded-full flex items-center justify-center mb-4'>
-              <span className='text-emerald-900 font-bold text-lg'>
-                MAGPPIE
-              </span>
+          <div className='relative flex flex-col items-center px-6 text-center h-screen'>
+            {/* Logo and Title */}
+            <div className='flex flex-col items-center pt-16 absolute top-0 w-full'>
+              <div className='w-24 h-24 bg-white rounded-full flex items-center justify-center mb-4'>
+                <span className='text-emerald-900 font-bold text-lg'>
+                  MAGPPIE
+                </span>
+              </div>
+              <h1 className='text-2xl text-white mb-2 x-font-exo-300'>
+                Wellness Kitchen
+              </h1>
             </div>
 
-            {/* Title */}
-            <h1 className='text-2xl  text-white mb-2  x-font-exo-300'>
-              Wellness Kitchen
-            </h1>
             {/* Subtitle */}
-            <div className='text-white/90 mt-64 text-lg x-font-barlow-semi-condensed-400'>
+            <div className='text-white/90 text-lg x-font-barlow-semi-condensed-400 flex items-center justify-center h-full'>
               Welcome to the wellness movement
             </div>
           </div>
@@ -57,22 +58,22 @@ export default function Home() {
 
         <section className='max-w-lg mx-auto text-center px-6 py-12'>
           {/* Title */}
-          <h2 className='text-3xl  leading-tight text-black x-font-dalglish-400'>
-            Our wellness kitchen <br />
+          <h2 className='text-[32px]  leading-tight text-black x-font-dalglish-400'>
+            our wellness kitchen <br />
             takes care of your <br />
             family’s health
           </h2>
 
           {/* Description */}
           <div className='x-font-barlow-semi-condensed-300'>
-            <p className='mt-6 text-gray-700 text-lg leading-relaxed '>
+            <p className='mt-6 text-gray-700 text-[20px] leading-relaxed '>
               Our planet faces unseen threats every day – our food, water, air,
               and even our homes are filled with toxins. Harmful formaldehyde
               emissions from kitchens and furniture are putting our cellular
               health at risk.
             </p>
 
-            <p className='mt-6 text-gray-700 text-lg leading-relaxed'>
+            <p className='mt-6 text-gray-700 text-[20px] leading-relaxed'>
               At Magppie, we’re more than a brand; we’re a wellness movement.
               With deep-tech innovations, we create health-conscious solutions
               to transform your home – particularly kitchen, wardrobes and
@@ -91,6 +92,8 @@ export default function Home() {
       <hr className='bg-black' />
 
       <BuyOnline />
+
+      <hr className='bg-black' />
 
       <Clients />
 

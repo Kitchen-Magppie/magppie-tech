@@ -5,6 +5,7 @@ export type TBuyOnlineItem = {
   title: string;
   images: string[];
   desc: string;
+  more: string;
 };
 
 export type TCategoryItem = {

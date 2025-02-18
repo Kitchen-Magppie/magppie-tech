@@ -25,7 +25,7 @@ export function CategoryCardItem(props: TProps) {
           MAGPPIE
         </div>
         {/* Overlay with Text */}
-        <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white border-t-2 p-3 flex justify-between items-center'>
+        <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white border-t-[1px] p-3 flex justify-between items-center'>
           <span className='text-lg x-font-barlow-semi-condensed-400'>
             {data.title}
           </span>
@@ -40,28 +40,42 @@ export function CategoryCardItem(props: TProps) {
               case 'chat':
                 return (
                   <ChatComingSoonDialog>
-                    <Icon
+                    {/* <Icon
                       icon={item.value}
                       className='w-8 h-8 cursor-pointer'
-                    />
+                    /> */}
+                    <div>
+                      <img src={item.value} alt='' />
+                    </div>
                   </ChatComingSoonDialog>
                 );
 
               case 'call us':
                 return (
-                  <Icon
-                    icon={item.value}
-                    onClick={() => {
-                      const phoneNumber = '+911234567890';
-                      window.location.href = `tel:${phoneNumber}`;
-                    }}
-                    className='w-8 h-8 cursor-pointer'
-                  />
+                  <div
+                  // onClick={() => {
+                  //   const phoneNumber = '+911234567890';
+                  //   window.location.href = `tel:${phoneNumber}`;
+                  // }}
+                  >
+                    <img src={item.value} alt='' />
+                  </div>
+                  // <Icon
+                  //   icon={item.value}
+                  //   onClick={() => {
+                  //     const phoneNumber = '+911234567890';
+                  //     window.location.href = `tel:${phoneNumber}`;
+                  //   }}
+                  //   className='w-8 h-8 cursor-pointer'
+                  // />
                 );
 
               default:
                 return (
-                  <Icon icon={item.value} className='w-8 h-8 cursor-pointer' />
+                  <div>
+                    <img src={item.value} alt='' />
+                  </div>
+                  // <Icon icon={item.value} className='w-8 h-8 cursor-pointer' />
                 );
             }
           };
@@ -76,7 +90,7 @@ export function CategoryCardItem(props: TProps) {
         })}
       </div>
       {/* Content Section */}
-      <div className='px-3 pb-6'>
+      <div className='px-3 pb-10'>
         <h3 className='text-lg  x-font-barlow-semi-condensed-500'>
           {data.subTitle}
         </h3>

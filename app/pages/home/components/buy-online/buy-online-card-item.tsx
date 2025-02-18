@@ -1,4 +1,4 @@
-import { Icon } from '@iconify/react';
+// import { Icon } from '@iconify/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
@@ -19,7 +19,7 @@ export function BuyOnlineCardItem(props: TProps) {
           MAGPPIE
         </div>
         <span className='text-gray-900  text-medium x-font-barlow-semi-condensed-400'>
-          wellness kitchen
+          {data.heading}
         </span>
       </div>
 
@@ -52,8 +52,8 @@ export function BuyOnlineCardItem(props: TProps) {
                   className='w-full h-full object-cover rounded-t-lg'
                 /> */}
                     <div className=''>
-                      <div className='bg-transparent absolute bottom-0 left-0 right-0 '>
-                        <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white p-3 flex justify-between items-center'>
+                      <div className='bg-transparent absolute bottom-0 left-0 right-0'>
+                        <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white border-t-[1px] p-3 flex justify-between items-center'>
                           <div className='flex justify-center gap-1'>
                             <div className=' text-2xl'>$</div>
                             <div className='flex flex-col justify-start'>
@@ -98,28 +98,48 @@ export function BuyOnlineCardItem(props: TProps) {
               case 'chat':
                 return (
                   <ChatComingSoonDialog>
-                    <Icon
+                    {/* <Icon
                       icon={item.value}
-                      className='w-8 h-8 cursor-pointer'
-                    />
+                      inline={true}
+                      className='w-32 h-32 cursor-pointer'
+                    /> */}
+                    <div>
+                      <img src={item.value} alt='' />
+                    </div>
                   </ChatComingSoonDialog>
                 );
 
               case 'call us':
                 return (
-                  <Icon
-                    icon={item.value}
-                    onClick={() => {
-                      const phoneNumber = '+911234567890';
-                      window.location.href = `tel:${phoneNumber}`;
-                    }}
-                    className='w-8 h-8 cursor-pointer'
-                  />
+                  <div
+                  // onClick={() => {
+                  //   const phoneNumber = '+911234567890';
+                  //   window.location.href = `tel:${phoneNumber}`;
+                  // }}
+                  >
+                    <img src={item.value} alt='' />
+                  </div>
+                  // <Icon
+                  //   icon={item.value}
+                  //   inline={true}
+                  //   onClick={() => {
+                  //     const phoneNumber = '+911234567890';
+                  //     window.location.href = `tel:${phoneNumber}`;
+                  //   }}
+                  //   className='w-32 h-32 cursor-pointer'
+                  // />
                 );
 
               default:
                 return (
-                  <Icon icon={item.value} className='w-8 h-8 cursor-pointer' />
+                  <div>
+                    <img src={item.value} alt='' />
+                  </div>
+                  // <Icon
+                  //   icon={item.value}
+                  //   inline={true}
+                  //   className='w-32 h-32 cursor-pointer'
+                  // />
                 );
             }
           };
@@ -145,7 +165,7 @@ export function BuyOnlineCardItem(props: TProps) {
           // href='/wardrobes'
           className=' text-gray-500 font-medium text-sm mt-2 inline-block underline cursor-pointer'
         >
-          see all wellness kitchens
+          {data.more}
         </div>
       </div>
     </div>
