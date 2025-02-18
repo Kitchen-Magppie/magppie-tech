@@ -13,7 +13,7 @@ export function Clients() {
       <h2 className='text-center text-[36px] x-font-noto-serif-display-600-italic mb-6 font-normal'>
         Our Clients
       </h2>
-      <div className="columns-2 md:columns-3 gap-2 [column-fill:_balance]">
+      <div className="columns-2 gap-2">
         {clients
           .sort((a, b) => a.id - b.id) // Maintain order based on ID
           .map((client) => (
