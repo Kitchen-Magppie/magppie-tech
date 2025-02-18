@@ -2,7 +2,8 @@ import { Link } from '@remix-run/react';
 import newOne from '~/assets/images/new-one.png';
 import newTwo from '~/assets/images/new-two.png';
 import newThree from '~/assets/images/new-three.png';
-import { Icon } from '@iconify/react';
+// import { Icon } from '@iconify/react';
+import arrow from "~/assets/images/rrow.png"
 
 export function AiMagppie() {
   const images = [
@@ -34,12 +35,9 @@ export function AiMagppie() {
         className='flex flex-col items-center space-x-2 text-gray-800 hover:underline'
       >
         <div className='font-light'>
-          <Icon
-            icon='iwwa:arrow-right'
-            style={{ height: '30px', width: '90px' }}
-          />
+          <img src={arrow} alt="" />
         </div>
-        <span className='text-[18px]'>Explore</span>
+        <span className='text-[18px] mt-3'>Explore</span>
       </Link>
 
       <div className='space-y-4'>
