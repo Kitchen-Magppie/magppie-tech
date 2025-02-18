@@ -2,10 +2,6 @@ import ProductCategoriesOne from '~/assets/videos/product-categories1.mp4';
 import ProductCategoriesTwo from '~/assets/videos/product-categories-2.mp4';
 import onGoing from '~/assets/videos/on-going.mp4';
 import { TCategoryItem, TOnGoingItem } from '~/types';
-import cht from "~/assets/images/cht.png"
-import sve from "~/assets/images/sve.png"
-import cll from "~/assets/images/cll.png"
-import shre from "~/assets/images/shre.png"
 
 export const CATEGORY_MOCK_DATA: TCategoryItem[] = [
   {
