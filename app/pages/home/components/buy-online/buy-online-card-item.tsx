@@ -52,8 +52,8 @@ export function BuyOnlineCardItem(props: TProps) {
                   className='w-full h-full object-cover rounded-t-lg'
                 /> */}
                     <div className=''>
-                      <div className='bg-transparent absolute bottom-0 left-0 right-0 '>
-                        <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white p-3 flex justify-between items-center'>
+                      <div className='bg-transparent absolute bottom-0 left-0 right-0'>
+                        <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white border-t-[1px] p-3 flex justify-between items-center'>
                           <div className='flex justify-center gap-1'>
                             <div className=' text-2xl'>$</div>
                             <div className='flex flex-col justify-start'>
@@ -145,7 +145,7 @@ export function BuyOnlineCardItem(props: TProps) {
           // href='/wardrobes'
           className=' text-gray-500 font-medium text-sm mt-2 inline-block underline cursor-pointer'
         >
-          see all wellness kitchens
+          {data.more}
         </div>
       </div>
     </div>

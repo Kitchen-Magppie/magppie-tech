@@ -14,7 +14,7 @@ export function AiMagppie() {
   return (
     <div className='flex flex-col items-center p-4 space-y-6 text-center mt-6'>
       <h2 className='text-[36px] x-font-noto-serif-display-600-italic font-normal'>
-        Whats new!
+        {`What's new!`}
       </h2>
 
       <div className='flex flex-col items-center space-y-2'>
@@ -34,7 +34,10 @@ export function AiMagppie() {
         className='flex flex-col items-center space-x-2 text-gray-800 hover:underline'
       >
         <div className='font-light'>
-          <Icon icon='iwwa:arrow-right' width='100' height='80' />
+          <Icon
+            icon='iwwa:arrow-right'
+            style={{ height: '30px', width: '90px' }}
+          />
         </div>
         <span className='text-[18px]'>Explore</span>
       </Link>

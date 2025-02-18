@@ -25,7 +25,7 @@ export function CategoryCardItem(props: TProps) {
           MAGPPIE
         </div>
         {/* Overlay with Text */}
-        <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white border-t-2 p-3 flex justify-between items-center'>
+        <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white border-t-[1px] p-3 flex justify-between items-center'>
           <span className='text-lg x-font-barlow-semi-condensed-400'>
             {data.title}
           </span>
