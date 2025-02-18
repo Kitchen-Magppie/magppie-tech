@@ -1,3 +1,4 @@
+import { Link } from '@remix-run/react';
 import { Button } from '~/components/ui/button';
 
 export default function NotFound() {
@@ -7,13 +8,15 @@ export default function NotFound() {
         <div className='text-4xl ' style={{ fontWeight: 700 }}>
           MAGPPIE
         </div>
-        <div className='space-y-3'>
+        <div className='space-y-3 mb-2'>
           <h1 className='text-4xl font-bold tracking-tighter sm:text-5xl animate-bounce'>
             404
           </h1>
           <p className='text-gray-500'>Page not found!</p>
         </div>
-        <Button className='x-font-exo-500'>Return to website</Button>
+        <Link to='/'>
+          <Button className='x-font-exo-500'>Return to website</Button>
+        </Link>
       </div>
     </div>
   );
