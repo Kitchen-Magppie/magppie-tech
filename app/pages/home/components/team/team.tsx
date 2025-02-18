@@ -19,6 +19,8 @@ export function Team() {
                   autoPlay
                   loop
                   muted
+                  playsInline // Prevents fullscreen on iOS
+                  // webkit-playsinline="true" // For older Safari versions
                 />
               ) : (
                 <img
