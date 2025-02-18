@@ -36,22 +36,21 @@ export default function Home() {
           <div className='absolute inset-0 bg-black bg-opacity-50 rounded-bl-3xl rounded-br-3xl'></div>
 
           {/* Content Overlay */}
-          <div className='relative flex flex-col items-center px-6 text-center h-screen justify-start'>
-            {/* Logo */}
-            <div className='flex flex-col items-center pt-16'>
+          <div className='relative flex flex-col items-center px-6 text-center h-screen'>
+            {/* Logo and Title */}
+            <div className='flex flex-col items-center pt-16 absolute top-0 w-full'>
               <div className='w-24 h-24 bg-white rounded-full flex items-center justify-center mb-4'>
                 <span className='text-emerald-900 font-bold text-lg'>
                   MAGPPIE
                 </span>
               </div>
-              {/* Title */}
-              <h1 className='text-2xl text-white mb-2  x-font-exo-300'>
+              <h1 className='text-2xl text-white mb-2 x-font-exo-300'>
                 Wellness Kitchen
               </h1>
             </div>
 
             {/* Subtitle */}
-            <div className='text-white/90 my-auto text-lg x-font-barlow-semi-condensed-400'>
+            <div className='text-white/90 text-lg x-font-barlow-semi-condensed-400 flex items-center justify-center h-full'>
               Welcome to the wellness movement
             </div>
           </div>

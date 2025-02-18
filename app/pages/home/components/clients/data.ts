@@ -18,50 +18,57 @@ export const clients = [
   },
   {
     id: 2,
-    src: harbajan,
-    height: '300px',
-    title: 'Harbhajan Singh',
-    subTitle: 'Cricketer, Indian Team',
-  },
-  {
-    id: 3,
-    src: sussne,
-    height: '300px',
-    title: 'Sussanne Khan',
-    subTitle: 'Interior Designer',
-  },
-  {
-    id: 4,
-    src: sunil,
-    height: '300px',
-    title: 'Sunil Bharti Mittal',
-    subTitle: 'Founder & CEO, Airtel',
-  },
-  {
-    id: 5,
     src: ranbir,
     height: '420px',
+    objectPosition: 'center', // Added default value for objectPosition
     title: 'Ranbir Kapoor',
     subTitle: 'Bollywood Superstar',
   },
   {
-    id: 6,
+    id: 3,
+    src: harbajan,
+    height: '300px',
+    objectPosition: 'center', // Added default value for objectPosition
+    title: 'Harbhajan Singh',
+    subTitle: 'Cricketer, Indian Team',
+  },
+  {
+    id: 4,
     src: chiranjeevi,
     height: '300px',
+    objectPosition: 'center', // Added default value for objectPosition
     title: 'Chiranjeevi',
     subTitle: 'Bollywood Superstar',
   },
   {
-    id: 7,
+    id: 5,
+    src: sussne,
+    height: '300px',
+    objectPosition: 'center', // Added default value for objectPosition
+    title: 'Sussanne Khan',
+    subTitle: 'Interior Designer',
+  },
+  {
+    id: 6,
     src: arshad,
     height: '350px',
+    objectPosition: 'center', // Added default value for objectPosition
     title: 'Arshad Warsi',
     subTitle: 'Actor',
+  },
+  {
+    id: 7,
+    src: sunil,
+    height: '300px',
+    objectPosition: 'center', // Added default value for objectPosition
+    title: 'Sunil Bharti Mittal',
+    subTitle: 'Founder & CEO, Airtel',
   },
   {
     id: 8,
     src: natasha,
     height: '300px',
+    objectPosition: 'center', // Added default value for objectPosition
     title: 'Natasha Poonawala',
     subTitle: 'Philanthropist',
   },
