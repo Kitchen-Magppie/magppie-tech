@@ -155,7 +155,7 @@ export function BuyOnlineCardItem(props: TProps) {
 
       {/* Product Description */}
       <div className='p-4 flex flex-col justify-start items-start'>
-        <h3 className='text-lg x-font-barlow-semi-condensed-5s00'>
+        <h3 className='text-lg x-font-barlow-semi-condensed-500'>
           {data.title}
         </h3>
         <p className='text-sm text-left text-gray-700 mt-1 x-font-barlow-semi-condensed-300'>

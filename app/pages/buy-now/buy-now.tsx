@@ -1,12 +1,13 @@
-import { Icon } from '@iconify/react';
+import { Link } from '@remix-run/react';
+// =========================================================
+import { MobileLayout } from './components/mobile-layout';
+import { ButtonsMenu } from './components/buttons-menu'; // Import FloatingMenu component
 import theChef from '~/assets/videos/the-chef.mp4';
 import theChefOne from '~/assets/images/the-chef/the-chef-1.png';
 import theChefTwo from '~/assets/images/the-chef/the-chef-2.png';
 import theChefThree from '~/assets/images/the-chef/the-chef-3.png';
-
-import { MobileLayout } from './components/mobile-layout';
-import { Link } from '@remix-run/react';
-import { ButtonsMenu } from './components/buttons-menu'; // Import FloatingMenu component
+import { ChatComingSoonDialog } from '~/components';
+import { CARD_ACTION_OPTIONS } from '~/mocks';
 
 export default function BuyNow() {
   return (
@@ -33,15 +34,60 @@ export default function BuyNow() {
           {/* Content Overlay */}
           <div className='relative flex flex-col items-center pt-80 px-6 text-center'>
             {/* Title */}
-            <h1 className='text-5xl text-white mb-2'>the chef</h1>
+            <h1 className='text-5xl text-white x-font-barlow-semi-condensed-100'>
+              the chef
+            </h1>
 
             {/* Subtitle */}
-            <p className='text-white/90 text-lg'>wellnes kitchen</p>
+            <p className='text-white/90 text-lg x-font-barlow-semi-condensed-400'>
+              wellness kitchen
+            </p>
           </div>
         </div>
 
         <div className='flex justify-evenly px-3 py-4 w-full text-gray-600 gap-6 conatiner mx-auto max-w-80 mt-5'>
-          <div className='flex flex-col items-center gap-1'>
+          {CARD_ACTION_OPTIONS?.map((item, i) => {
+            const getAction = () => {
+              switch (item.label) {
+                case 'chat':
+                  return (
+                    <ChatComingSoonDialog>
+                      <div>
+                        <img src={item.value} alt='' />
+                      </div>
+                    </ChatComingSoonDialog>
+                  );
+
+                case 'call us':
+                  return (
+                    <div
+                    // onClick={() => {
+                    //   const phoneNumber = '+911234567890';
+                    //   window.location.href = `tel:${phoneNumber}`;
+                    // }}
+                    >
+                      <img src={item.value} alt='' />
+                    </div>
+                  );
+
+                default:
+                  return (
+                    <div>
+                      <img src={item.value} alt='' />
+                    </div>
+                  );
+              }
+            };
+            return (
+              <div className='flex flex-col items-center gap-1' key={i}>
+                {getAction()}
+
+                <span className='text-xs'>{item.label}</span>
+              </div>
+            );
+          })}
+
+          {/* <div className='flex flex-col items-center gap-1'>
             <Icon icon='mynaui:chat' className='w-8 h-8' />
             <span className='text-xs'>chat</span>
           </div>
@@ -59,22 +105,22 @@ export default function BuyNow() {
               className='w-8 h-8'
             />
             <span className='text-xs'>save</span>
-          </div>
+          </div> */}
         </div>
 
         <div className='bg-white p-6 rounded-lg text-center max-w-sm mx-auto mt-20'>
-          <p className='text-gray-600 text-lg'>
+          <p className='text-gray-600 text-lg x-font-barlow-semi-condensed-300'>
             Balinese-inspired outdoor kitchen designs featuring Silverstone body
             and countertops. These serene settings include lush greenery,
             adjoining water features, and spaces for families to enjoy cooking
             and dining together.
           </p>
-          <p className='text-gray-700 font-semibold text-xl mt-4'>
-            $ 15000 onwards
+          <p className='text-gray-700 text-xl mt-4 x-font-barlow-semi-condensed-400'>
+            $15000 onwards
           </p>
           <Link
             to='#'
-            className='bg-[#313E48] mt-4 inline-block w-full py-4 rounded-full text-base font-medium text-white'
+            className='bg-[#313E48] mt-4 inline-block w-full py-4 rounded-full text-base text-white x-font-barlow-semi-condensed-400'
           >
             Get price estimate for your requirement
           </Link>
