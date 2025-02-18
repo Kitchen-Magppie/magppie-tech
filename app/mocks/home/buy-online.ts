@@ -9,6 +9,7 @@ export const BUY_ONLINE_MOCK_DATA: TBuyOnlineItem[] = [
     title: 'nova wellness kitchen',
     images: _.times(5, () => novaOne),
     desc: 'Balinese-inspired outdoor kitchen designs featuring Silverstone body and countertops...',
+    more: 'see all wellness kitchens',
   },
   {
     id: 2,
@@ -17,5 +18,6 @@ export const BUY_ONLINE_MOCK_DATA: TBuyOnlineItem[] = [
     title: 'bella rosé wellness wardrobe',
     images: _.times(5, () => novaOne),
     desc: 'Balinese-inspired outdoor kitchen designs featuring Silverstone body and countertops...',
+    more: 'see all wellness wardrobes',
   },
 ];

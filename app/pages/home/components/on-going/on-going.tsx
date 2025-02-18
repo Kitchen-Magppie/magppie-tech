@@ -86,7 +86,7 @@ export function OnGoing(props: TProps) {
         })}
       </div>
       {/* Content Section */}
-      <div className='px-3 pb-6'>
+      <div className='px-3 pb-6 mb-16'>
         <h3 className='text-lg x-font-barlow-semi-condensed-500'>
           {data.subTitle}
         </h3>
