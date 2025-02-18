@@ -2,6 +2,10 @@ import ProductCategoriesOne from '~/assets/videos/product-categories1.mp4';
 import ProductCategoriesTwo from '~/assets/videos/product-categories-2.mp4';
 import onGoing from '~/assets/videos/on-going.mp4';
 import { TCategoryItem, TOnGoingItem } from '~/types';
+import cht from "~/assets/images/cht.png"
+import sve from "~/assets/images/sve.png"
+import cll from "~/assets/images/cll.png"
+import shre from "~/assets/images/shre.png"
 
 export const CATEGORY_MOCK_DATA: TCategoryItem[] = [
   {
@@ -21,10 +25,14 @@ export const CATEGORY_MOCK_DATA: TCategoryItem[] = [
 ];
 
 export const CARD_ACTION_OPTIONS = [
-  { value: 'circum:chat-2', label: 'chat' },
-  { value: 'hugeicons:call-02', label: 'call us' },
-  { value: 'bitcoin-icons:share-filled', label: 'share' },
-  { value: 'material-symbols:bookmark-outline-rounded', label: 'save' },
+  // { value: 'circum:chat-2', label: 'chat' },
+  // { value: 'hugeicons:call-02', label: 'call us' },
+  // { value: 'bitcoin-icons:share-filled', label: 'share' },
+  // { value: 'material-symbols:bookmark-outline-rounded', label: 'save' },
+  { value: cht, label: 'chat' },
+  { value: cll, label: 'call us' },
+  { value: shre, label: 'share' },
+  { value: sve, label: 'save' },
 ];
 
 export const ONGOING_MOCK_DAtA: TOnGoingItem[] = [
