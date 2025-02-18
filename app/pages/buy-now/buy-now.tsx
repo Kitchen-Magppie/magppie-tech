@@ -1,4 +1,3 @@
-import { Link } from '@remix-run/react';
 // =========================================================
 import { MobileLayout } from './components/mobile-layout';
 import { ButtonsMenu } from './components/buttons-menu'; // Import FloatingMenu component
@@ -108,22 +107,19 @@ export default function BuyNow() {
           </div> */}
         </div>
 
-        <div className='bg-white p-6 rounded-lg text-center max-w-sm mx-auto mt-20'>
+        <div className='bg-white p-6 rounded-lg text-center max-w-sm mx-auto mt-20 flex flex-col gap-8'>
           <p className='text-gray-600 text-lg x-font-barlow-semi-condensed-300'>
             Balinese-inspired outdoor kitchen designs featuring Silverstone body
             and countertops. These serene settings include lush greenery,
             adjoining water features, and spaces for families to enjoy cooking
             and dining together.
           </p>
-          <p className='text-gray-700 text-xl mt-4 x-font-barlow-semi-condensed-400'>
+          <p className='text-gray-500 text-3xl x-font-barlow-semi-condensed-400'>
             $15000 onwards
           </p>
-          <Link
-            to='#'
-            className='bg-[#313E48] mt-4 inline-block w-full py-4 rounded-full text-base text-white x-font-barlow-semi-condensed-400'
-          >
+          <button className='text-xl bg-[#313E48] opacity-50 inline-block w-full py-4 rounded-full text-white x-font-barlow-semi-condensed-400'>
             Get price estimate for your requirement
-          </Link>
+          </button>
         </div>
 
         <div className='mt-8 grid grid-cols-1 gap-6 px-2'>
