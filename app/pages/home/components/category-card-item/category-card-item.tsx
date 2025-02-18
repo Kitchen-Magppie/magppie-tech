@@ -40,28 +40,42 @@ export function CategoryCardItem(props: TProps) {
               case 'chat':
                 return (
                   <ChatComingSoonDialog>
-                    <Icon
+                    {/* <Icon
                       icon={item.value}
                       className='w-8 h-8 cursor-pointer'
-                    />
+                    /> */}
+                    <div>
+                      <img src={item.value} alt='' />
+                    </div>
                   </ChatComingSoonDialog>
                 );
 
               case 'call us':
                 return (
-                  <Icon
-                    icon={item.value}
-                    onClick={() => {
-                      const phoneNumber = '+911234567890';
-                      window.location.href = `tel:${phoneNumber}`;
-                    }}
-                    className='w-8 h-8 cursor-pointer'
-                  />
+                  <div
+                  // onClick={() => {
+                  //   const phoneNumber = '+911234567890';
+                  //   window.location.href = `tel:${phoneNumber}`;
+                  // }}
+                  >
+                    <img src={item.value} alt='' />
+                  </div>
+                  // <Icon
+                  //   icon={item.value}
+                  //   onClick={() => {
+                  //     const phoneNumber = '+911234567890';
+                  //     window.location.href = `tel:${phoneNumber}`;
+                  //   }}
+                  //   className='w-8 h-8 cursor-pointer'
+                  // />
                 );
 
               default:
                 return (
-                  <Icon icon={item.value} className='w-8 h-8 cursor-pointer' />
+                  <div>
+                    <img src={item.value} alt='' />
+                  </div>
+                  // <Icon icon={item.value} className='w-8 h-8 cursor-pointer' />
                 );
             }
           };
