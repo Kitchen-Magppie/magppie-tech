@@ -58,7 +58,7 @@ export default function Home() {
 
         <section className='max-w-lg mx-auto text-center px-6 py-12'>
           {/* Title */}
-          <h2 className='text-[32px]  leading-tight text-black x-font-dalglish-400'>
+          <h2 className='text-[32px]  leading-tight text-black x-font-dalglish-500'>
             our wellness kitchen <br />
             takes care of your <br />
             family’s health
