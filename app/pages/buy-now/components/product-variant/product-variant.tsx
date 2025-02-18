@@ -39,8 +39,10 @@ export function ProductVariant() {
               </div>
             </div>
             <span
-              className={`mt-4 text-sm text-center x-font-barlow-semi-condensed-300 font-medium text-gray-700 ${
-                selectedStyle === style.id ? '' : 'opacity-40'
+              className={`mt-4 text-sm text-center x-font-barlow-semi-condensed-300 font-medium  ${
+                selectedStyle === style.id
+                  ? 'text-white'
+                  : 'opacity-40 text-gray-700'
               }`}
             >
               {style.name}
