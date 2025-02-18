@@ -7,6 +7,7 @@ import theChefTwo from '~/assets/images/the-chef/the-chef-2.png';
 import theChefThree from '~/assets/images/the-chef/the-chef-3.png';
 import { ChatComingSoonDialog } from '~/components';
 import { CARD_ACTION_OPTIONS } from '~/mocks';
+import { ProductVariant } from './components/product-variant';
 
 export default function BuyNow() {
   return (
@@ -107,7 +108,8 @@ export default function BuyNow() {
           </div> */}
         </div>
 
-        <div className='bg-white p-6 rounded-lg text-center max-w-sm mx-auto mt-20 flex flex-col gap-8'>
+        <ProductVariant />
+        <div className='bg-white p-6 rounded-lg text-center max-w-sm mx-auto flex flex-col gap-8'>
           <p className='text-gray-600 text-lg x-font-barlow-semi-condensed-300'>
             Balinese-inspired outdoor kitchen designs featuring Silverstone body
             and countertops. These serene settings include lush greenery,
