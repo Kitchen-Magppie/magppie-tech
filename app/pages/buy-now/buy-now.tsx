@@ -1,13 +1,11 @@
 // =========================================================
-import { MobileLayout } from './components/mobile-layout';
-import { ButtonsMenu } from './components/buttons-menu'; // Import FloatingMenu component
 import theChef from '~/assets/videos/the-chef.mp4';
 import theChefOne from '~/assets/images/the-chef/the-chef-1.png';
 import theChefTwo from '~/assets/images/the-chef/the-chef-2.png';
 import theChefThree from '~/assets/images/the-chef/the-chef-3.png';
 import { ChatComingSoonDialog } from '~/components';
 import { CARD_ACTION_OPTIONS } from '~/mocks';
-import { ProductVariant } from './components/product-variant';
+import { ProductVariant, ButtonsMenu, MobileLayout } from './components';
 
 export default function BuyNow() {
   return (
