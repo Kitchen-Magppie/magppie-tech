@@ -1,4 +1,4 @@
-import { Icon } from '@iconify/react';
+// import { Icon } from '@iconify/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
@@ -98,28 +98,48 @@ export function BuyOnlineCardItem(props: TProps) {
               case 'chat':
                 return (
                   <ChatComingSoonDialog>
-                    <Icon
+                    {/* <Icon
                       icon={item.value}
-                      className='w-8 h-8 cursor-pointer'
-                    />
+                      inline={true}
+                      className='w-32 h-32 cursor-pointer'
+                    /> */}
+                    <div>
+                      <img src={item.value} alt='' />
+                    </div>
                   </ChatComingSoonDialog>
                 );
 
               case 'call us':
                 return (
-                  <Icon
-                    icon={item.value}
-                    onClick={() => {
-                      const phoneNumber = '+911234567890';
-                      window.location.href = `tel:${phoneNumber}`;
-                    }}
-                    className='w-8 h-8 cursor-pointer'
-                  />
+                  <div
+                  // onClick={() => {
+                  //   const phoneNumber = '+911234567890';
+                  //   window.location.href = `tel:${phoneNumber}`;
+                  // }}
+                  >
+                    <img src={item.value} alt='' />
+                  </div>
+                  // <Icon
+                  //   icon={item.value}
+                  //   inline={true}
+                  //   onClick={() => {
+                  //     const phoneNumber = '+911234567890';
+                  //     window.location.href = `tel:${phoneNumber}`;
+                  //   }}
+                  //   className='w-32 h-32 cursor-pointer'
+                  // />
                 );
 
               default:
                 return (
-                  <Icon icon={item.value} className='w-8 h-8 cursor-pointer' />
+                  <div>
+                    <img src={item.value} alt='' />
+                  </div>
+                  // <Icon
+                  //   icon={item.value}
+                  //   inline={true}
+                  //   className='w-32 h-32 cursor-pointer'
+                  // />
                 );
             }
           };
