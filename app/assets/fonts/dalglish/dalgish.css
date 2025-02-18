@@ -1,40 +1,58 @@
-.x-font-dalglish-100 {
-  font-family: 'Dalglish Regular', serif;
-  src: url('./dalglish-regular.ttf');
-  font-optical-sizing: auto;
-  font-weight: 100;
+/* @font-face {
+  font-family: 'Dalglish';
+  src: url('./Dalglish-Bold.eot');
+  src: local('Dalglish Bold'), local('Dalglish-Bold'),
+    url('./Dalglish-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./Dalglish-Bold.woff2') format('woff2'),
+    url('./Dalglish-Bold.woff') format('woff'),
+    url('./Dalglish-Bold.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
-  font-display: swap;
+} */
+
+@font-face {
+  font-family: 'Dalglish';
+  src: url('./Dalglish.eot');
+  src: local('./Dalglish'),
+    url('./Dalglish.eot?#iefix') format('embedded-opentype'),
+    url('./Dalglish.woff2') format('woff2'),
+    url('./Dalglish.woff') format('woff'),
+    url('./Dalglish.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dalglish';
+  src: url('./Dalglish-Italic.eot');
+  src: local('./Dalglish Italic'), local('./Dalglish-Italic'),
+    url('./Dalglish-Italic.eot?#iefix') format('embedded-opentype'),
+    url('./Dalglish-Italic.woff2') format('woff2'),
+    url('./Dalglish-Italic.woff') format('woff'),
+    url('./Dalglish-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+.x-font-dalglish-100 {
+  font-family: 'Dalglish', serif;
+  font-weight: 100;
 }
 .x-font-dalglish-200 {
-  font-family: 'Dalglish Regular', serif;
-  src: url('./dalglish-regular.ttf');
-  font-optical-sizing: auto;
+  font-family: 'Dalglish', serif;
   font-weight: 200;
-  font-style: normal;
-  font-display: swap;
 }
 .x-font-dalglish-300 {
-  font-family: 'Dalglish Regular', serif;
-  src: url('./dalglish-regular.ttf');
-  font-optical-sizing: auto;
+  font-family: 'Dalglish', serif;
   font-weight: 300;
-  font-style: normal;
-  font-display: swap;
 }
 
 .x-font-dalglish-400 {
-  font-family: 'Dalglish', serif;
-  src: url('dalglish-regular.ttf');
-  font-optical-sizing: auto;
+  font-family: 'Dalglish';
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
 }
 .x-font-dalglish-500 {
-  font-family: 'Dalglish Regular', serif;
-  src: url('./dalglish-regular.ttf');
-  font-optical-sizing: auto;
+  font-family: 'Dalglish', serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
