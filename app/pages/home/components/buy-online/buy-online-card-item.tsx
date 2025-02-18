@@ -7,10 +7,12 @@ import classes from './buy-online-card-item.module.css';
 import { TBuyOnlineItem } from '~/types';
 import { CARD_ACTION_OPTIONS } from '~/mocks';
 import { ChatComingSoonDialog } from '~/components';
+import { useNavigate } from '@remix-run/react';
 
 export function BuyOnlineCardItem(props: TProps) {
   const { data } = props;
 
+  const navigate = useNavigate();
   return (
     <div>
       {/* Header */}
@@ -66,7 +68,12 @@ export function BuyOnlineCardItem(props: TProps) {
                             </div>
                           </div>
 
-                          <button className='bg-white text-black font-semibold  px-6 py-2 rounded-full text-sm '>
+                          <button
+                            className='bg-white text-black font-semibold  px-6 py-2 rounded-full text-sm '
+                            onClick={() => {
+                              navigate('/buy-now');
+                            }}
+                          >
                             buy now
                           </button>
                         </div>
