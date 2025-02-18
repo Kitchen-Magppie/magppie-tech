@@ -13,7 +13,9 @@ export function ProductVariant() {
             key={style.id}
             onClick={() => setSelectedStyle(style.id)}
             className={`flex border-2 flex-col items-center min-w-[100px] rounded-[32px] p-6 transition-all duration-300 ${
-              selectedStyle === style.id ? 'bg-[#313E48]' : 'bg-white'
+              selectedStyle === style.id
+                ? 'bg-[#313E48] border-[#313E48]'
+                : 'bg-white'
             } ${
               selectedStyle === style.id
                 ? ''
