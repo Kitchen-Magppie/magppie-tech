@@ -3,6 +3,7 @@ import { ButtonsMenu } from './components/buttons-menu';
 import lShape from './assets/l-shape.svg';
 import uShape from './assets/u-shape.svg';
 import parallelShape from './assets/parallel-shape.svg';
+import tick from './assets/tick.svg';
 import { Icon } from '@iconify/react';
 
 // =========================================================
@@ -66,12 +67,16 @@ export default function Form() {
                   return (
                     <div
                       key={shape}
-                      className={`relative rounded-2xl cursor-pointer w-full${
-                        kitchenShape === shape ? 'bg-[#BFD2C1]' : 'bg-[#FFFFFF]'
-                      }`}
+                      className='flex flex-col items-center relative rounded-2xl cursor-pointer w-full'
                       onClick={() => setKitchenShape(shape)}
                     >
-                      <div className='w-[100px] flex flex-col items-center h-[155px] bg-[#FFFFFF] rounded-2xl mb-1 p-2'>
+                      <div
+                        className={`w-[100px] flex flex-col items-center h-[155px] ${
+                          kitchenShape === shape
+                            ? 'bg-[#BFD2C1]'
+                            : 'bg-[#FFFFFF]'
+                        } rounded-2xl mb-1 p-2`}
+                      >
                         <img
                           src={shapeImages[shape]}
                           alt={`${shape} icon`}
@@ -81,6 +86,9 @@ export default function Form() {
                           {shape}
                         </p>
                       </div>
+                      {kitchenShape === shape ? (
+                          <img className='mt-2' src={tick} alt='' />
+                        ) : null}
                     </div>
                   );
                 })}
