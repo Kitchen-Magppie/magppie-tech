@@ -3,7 +3,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 // =========================================================
 
-import { MobileNavBar } from '~/components';
+import { MobileNavBar } from '~/components/mobile-nav-bar';
 
 export function MobileLayout({ children }: TProps) {
   return (
