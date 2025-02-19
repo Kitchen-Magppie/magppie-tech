@@ -3,7 +3,7 @@ import { NAVIGATION_OPTIONS } from '~/mocks';
 
 export function MobileNavBar() {
   return (
-    <div className='fixed bottom-4 left-16 right-16  '>
+    <div className='fixed bottom-4 left-16 right-16 z-50'>
       <nav className=' h-14 bg-white/80 backdrop-blur-md rounded-full px-6 shadow-lg z-50  '>
         <div className='flex items-center h-full gap-8 justify-center'>
           {NAVIGATION_OPTIONS?.map((item, i) => {
