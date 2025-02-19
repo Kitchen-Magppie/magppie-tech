@@ -34,50 +34,48 @@ export function BuyOnlineCardItem(props: TProps) {
           // pagination={{
           //   dynamicBullets: false,
           // }}
-          className={`w-full h-[500px]  ${classes.BuyOnlineCardSwiper}`}
+          className={`w-full h-[384px]  ${classes.BuyOnlineCardSwiper}`}
         >
           {data.images.map((image, i) => (
             <SwiperSlide key={i}>
-              <div className='h-[600px]'>
-                <div className='h-[450px]'>
-                  <div
-                    style={{
-                      background: `url(${image})`,
-                      objectFit: 'cover', // Temp code
-                      backgroundSize: '700px', // temp code;
-                    }}
-                    className='w-full h-full  x-font-barlow-semi-condensed-100 overflow-hidden relative  rounded-2xl'
-                  >
-                    {/* <img
+              <div
+                style={{
+                  background: `url(${image})`,
+                  backgroundSize: 'cover', // Ensure image covers the slide without stretching
+                  backgroundPosition: 'center', // Center the background image
+                  width: '100%',
+                  height: '100%'
+                }}
+                className='w-full h-full  x-font-barlow-semi-condensed-100 overflow-hidden relative  rounded-2xl'
+              >
+                {/* <img
                   src={image}
                   alt={`${data.title} ${i + 1}`}
                   className='w-full h-full object-cover rounded-t-lg'
                 /> */}
-                    <div className=''>
-                      <div className='bg-transparent absolute bottom-0 left-0 right-0'>
-                        <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white border-t-[1px] p-3 flex justify-between items-center'>
-                          <div className='flex justify-center gap-1'>
-                            <div className=' text-2xl'>$</div>
-                            <div className='flex flex-col justify-start'>
-                              <div className='text-xl font-light'>
-                                {data.amount}
-                              </div>
-                              <div className='text-xs font-semibold'>
-                                onwards
-                              </div>
-                            </div>
+                <div className=''>
+                  <div className='bg-transparent absolute bottom-0 left-0 right-0'>
+                    <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white border-t-[1px] p-3 flex justify-between items-center'>
+                      <div className='flex justify-center gap-1'>
+                        <div className=' text-2xl'>$</div>
+                        <div className='flex flex-col justify-start'>
+                          <div className='text-xl font-light'>
+                            {data.amount}
                           </div>
-
-                          <button
-                            className='bg-white text-black font-semibold  px-6 py-2 rounded-full text-sm '
-                            onClick={() => {
-                              navigate('/buy-now');
-                            }}
-                          >
-                            buy now
-                          </button>
+                          <div className='text-xs font-semibold'>
+                            onwards
+                          </div>
                         </div>
                       </div>
+
+                      <button
+                        className='bg-white text-black font-semibold  px-6 py-2 rounded-full text-sm '
+                        onClick={() => {
+                          navigate('/buy-now');
+                        }}
+                      >
+                        buy now
+                      </button>
                     </div>
                   </div>
                 </div>
