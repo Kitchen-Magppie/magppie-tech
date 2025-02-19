@@ -10,7 +10,7 @@ import {
 import { storageApp } from '~/config';
 import { _ } from '~/types';
 
-export default function useFirebaseStorageActions() {
+export function useFirebaseStorageActions() {
   const upload = useCallback(async (params: TUpload) => {
     const { file, onSuccess } = params;
     if (file?.size) {

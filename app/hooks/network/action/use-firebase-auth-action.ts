@@ -1,4 +1,3 @@
-import { useMemo } from 'react';
 import { auth } from '~/config';
 
 export function useFirebaseActionAuth() {
