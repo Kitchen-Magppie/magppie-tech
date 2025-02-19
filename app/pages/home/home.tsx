@@ -8,10 +8,10 @@ import {
   CategoryCardItem,
   OnGoing,
   Team,
+  Clients,
 } from '~/pages/home/components';
 import { MobileLayout } from '~/components';
 import { CATEGORY_MOCK_DATA, ONGOING_MOCK_DAtA } from '~/mocks';
-import { Clients } from './components/clients';
 
 export default function Home() {
   return (
