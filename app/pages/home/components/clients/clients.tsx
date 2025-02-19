@@ -49,8 +49,14 @@ export function Clients() {
                       onClick={() => onStoryClick(client)}
                       className='flex items-center bg-white text-black text-xs px-3 py-1 rounded-full shadow-md hover:bg-gray-200'
                     >
-                      <span className='mr-2'>Story</span>{' '}
-                      <Icon icon='weui:arrow-outlined' width='12' height='18' />
+                      <Link to='/client-story'>
+                        <span className='mr-2'>Story</span>{' '}
+                        <Icon
+                          icon='weui:arrow-outlined'
+                          width='12'
+                          height='18'
+                        />
+                      </Link>
                     </button>
                   </div>
                 )}
