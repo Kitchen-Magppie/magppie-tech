@@ -50,7 +50,7 @@ export default function Home() {
             </div>
 
             {/* Subtitle */}
-            <div className='text-white/90 text-lg x-font-barlow-semi-condensed-400 flex items-center justify-center h-full'>
+            <div className='text-white/90 text-lg x-fontbarlow-semi-condense-d-400 flex items-center justify-center h-full'>
               Welcome to the wellness movement
             </div>
           </div>

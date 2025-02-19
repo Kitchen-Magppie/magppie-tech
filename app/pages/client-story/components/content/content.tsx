@@ -1,53 +1,85 @@
-// import { MobileLayout } from '~/components/mobile-layout';
-// import dhoniStory from '../../assets/dhoni-story.png';
-// import arrowRight from '../../assets/arrow-right.svg';
-// import arrowLeft from '../../assets/arrow-left.svg';
-// import cross from '../../assets/cross.svg';
+import { clientStory } from './data';
+import clientImage from '../../assets/client-story-image.png';
+import dash from '../../assets/dash.svg';
+import { Cards } from '../cards';
 
 export function Content() {
   return (
-    <div>
-        <h1>hello</h1>
-    </div>
-    // <MobileLayout>
-    //   <div className='relative w-full h-screen flex'>
-    //     <div className='relative overflow-hidden'>
-    //       <img
-    //         src={dhoniStory}
-    //         alt=''
-    //         className='w-full h-[700px] object-cover object-right'
-    //       />
-    //       <div className='absolute top-4 right-4 z-10 bg-[#354755] py-6 px-2 text-white rounded-full text-[10px] font-bold'>
-    //         MAGPPIE
-    //       </div>
+    <div className='flex flex-col justify-start w-full mx-auto mt-6 h-screen'>
+      <span className='text-[16px] text-[#313E48] font-semibold x-fontbarlow-semi-condense-700 px-8'>
+        THE
+      </span>
+      <div className='px-8'>
+        <span className='text-[40px] text-[#313E48] font-light x-fontbarlow-semi-condense-700'>
+          {clientStory.name}
+        </span>
+        <br />
+        <span className='text-[40px] text-[#313E48] font-light x-fontbarlow-semi-condense-700'>
+          Wellness Story
+        </span>
+      </div>
+      <div className='pb-6 px-8'>
+        <p className='x-fontbarlow-semi-condense-300 text-[20px] font-light mt-4'>
+          {clientStory.contentOne}
+        </p>
+        <p className='x-fontbarlow-semi-condense-300 text-[20px] font-light mt-8'>
+          {clientStory.contentTwo}
+        </p>
+        <p className='x-fontbarlow-semi-condense-300 text-[20px] font-light mt-8'>
+          {clientStory.contentThree}
+        </p>
+        <p className='x-fontbarlow-semi-condense-300 text-[20px] font-light mt-8'>
+          {clientStory.contentFour}
+        </p>
+      </div>
 
-    //       <div className='flex justify-between items-center w-full absolute bottom-64'>
-    //         <button className='text-white p-2 rounded-full'>
-    //           <img
-    //             src={arrowLeft}
-    //             alt=''
-    //             className='w-full object-cover object-right pl-5'
-    //           />
-    //         </button>
-    //         <div className='text-white p-2 rounded-full'>
-    //           <img
-    //             src={cross}
-    //             alt=''
-    //             className='w-full object-cover object-right'
-    //           />
-    //         </div>
-    //         <button className='text-white p-2 rounded-full'>
-    //           <img
-    //             src={arrowRight}
-    //             alt=''
-    //             className='w-full object-cover object-right pr-5'
-    //           />
-    //         </button>
-    //       </div>
-    //       {/* Dark Overlay */}
-    //       <div className='absolute inset-0 h-[700px] bg-black bg-opacity-20'></div>
-    //     </div>
-    //   </div>
-    // </MobileLayout>
+      <div>
+        <img src={clientImage} alt='' />
+      </div>
+
+      <p className='x-fontbarlow-semi-condense-300 text-[20px] font-light mt-8 px-8'>
+        {clientStory.contentFive}
+      </p>
+
+      <div className='mt-8 flex flex-col px-8'>
+        <span className='italic text-[45px] font-light'>
+          {clientStory.headingTwo}
+        </span>
+        <br />
+        <span className='text-[15px] text-[#313E48] x-fontbarlow-semi-condense-700'>
+          {clientStory.nameTwo}
+        </span>
+      </div>
+
+      <div className='pb-6 px-8'>
+        <p className='x-fontbarlow-semi-condense-300 text-[20px] font-light mt-4'>
+          {clientStory.contentSix}
+        </p>
+        <p className='x-fontbarlow-semi-condense-300 text-[20px] font-light mt-8'>
+          {clientStory.contentSeven}
+        </p>
+        <p className='x-fontbarlow-semi-condense-300 text-[20px] font-light mt-8'>
+          {clientStory.contentEight}
+        </p>
+        <img
+          className='h-[400px] object-cover rounded-xl mt-8'
+          src={clientImage}
+          alt=''
+        />
+        <p className='x-fontbarlow-semi-condense-300 text-[20px] font-light mt-8'>
+          {clientStory.contentNine}
+        </p>
+      </div>
+
+      <div className='flex justify-center items-center'>
+        <img className='w-[25px]' src={dash} alt='' />
+      </div>
+
+      <Cards />
+
+      <div className='flex justify-center items-center pb-32 mt-10'>
+        <img className='w-[25px]' src={dash} alt='' />
+      </div>
+    </div>
   );
 }
