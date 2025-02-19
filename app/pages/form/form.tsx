@@ -3,6 +3,7 @@ import { ButtonsMenu } from './components/buttons-menu';
 import lShape from './assets/l-shape.svg';
 import uShape from './assets/u-shape.svg';
 import parallelShape from './assets/parallel-shape.svg';
+import { Icon } from '@iconify/react';
 
 // =========================================================
 export default function Form() {
@@ -20,13 +21,32 @@ export default function Form() {
             <p className='text-[16px] text-center font-medium mb-6 text-white x-fontbarlow-semi-condense-400'>
               Your Kitchen Area Size
             </p>
-            <div className='flex gap-10  mt-2'>
-              <select className='w-1/2 p-2 border rounded-full text-black bg-[#FFFFFF]'>
-                <option>Length (Ft)</option>
-              </select>
-              <select className='w-1/2 p-2 border rounded-full text-black bg-[#FFFFFF]'>
-                <option>Width (Ft)</option>
-              </select>
+            <div className='flex gap-10 mt-2'>
+              {/* Length Select */}
+              <div className='relative w-1/2'>
+                <select className='w-full p-2 border rounded-full text-black bg-[#FFFFFF] appearance-none pr-10'>
+                  <option>Length (Ft)</option>
+                </select>
+                <div className='absolute inset-y-0 right-3 flex items-center pointer-events-none'>
+                  <Icon
+                    icon='mdi:chevron-down'
+                    className='w-5 h-5 text-gray-500'
+                  />
+                </div>
+              </div>
+
+              {/* Width Select */}
+              <div className='relative w-1/2'>
+                <select className='w-full p-2 border rounded-full text-black bg-[#FFFFFF] appearance-none pr-10'>
+                  <option>Width (Ft)</option>
+                </select>
+                <div className='absolute inset-y-0 right-3 flex items-center pointer-events-none'>
+                  <Icon
+                    icon='mdi:chevron-down'
+                    className='w-5 h-5 text-gray-500'
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
@@ -36,7 +56,7 @@ export default function Form() {
               <p className='text-[16px] font-medium text-white x-fontbarlow-semi-condense-400 text-center'>
                 Your Kitchen Shape
               </p>
-              <div className='flex justify-between bg-[#000000] p-3 rounded-lg mt-2'>
+              <div className='flex justify-between bg-[#000000] rounded-lg mt-2 w-full h-[200px]'>
                 {['L Shape', 'U Shape', 'Parallel'].map((shape) => {
                   const shapeImages = {
                     'L Shape': lShape,
@@ -46,20 +66,18 @@ export default function Form() {
                   return (
                     <div
                       key={shape}
-                      className={`relative flex flex-col items-center p-2 rounded-lg cursor-pointer w-1/3 ${
-                        kitchenShape === shape
-                          ? 'bg-[#BFD2C1]'
-                          : 'bg-transparent'
+                      className={`relative rounded-2xl cursor-pointer w-full${
+                        kitchenShape === shape ? 'bg-[#BFD2C1]' : 'bg-[#FFFFFF]'
                       }`}
-                      // onClick={() => setKitchenShape(shape)}
+                      onClick={() => setKitchenShape(shape)}
                     >
-                      <div className='w-[100px] flex flex-col items-center h-[155px] bg-[#FFFFFF] rounded-md mb-1 p-2'>
+                      <div className='w-[100px] flex flex-col items-center h-[155px] bg-[#FFFFFF] rounded-2xl mb-1 p-2'>
                         <img
                           src={shapeImages[shape]}
                           alt={`${shape} icon`}
                           className='w-full h-full object-contain rounded-md'
                         />
-                        <p className='absolute bottom-6 text-[12px] text-black'>
+                        <p className='absolute bottom-12 text-[12px] text-black'>
                           {shape}
                         </p>
                       </div>
