@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import VariantImage from '~/assets/images/product-variant.png';
 export function ProductVariant() {
   const [selectedStyle, setSelectedStyle] = useState<string>(
     VARIANT_OPTIONS[0].id
@@ -25,12 +25,11 @@ export function ProductVariant() {
           >
             <div className='relative'>
               <div
-                className={`w-20 h-20 rounded-full ${style.color} shadow-inner relative overflow-hidden`}
+                className={`w-20 h-20 rounded-full shadow-inner relative overflow-hidden`}
                 style={{
-                  backgroundImage:
-                    'url("https://images.unsplash.com/photo-1603665409265-bdc95b1e4d98?auto=format&fit=crop&q=80&w=200&h=200")',
-                  //   backgroundBlend: 'overlay',
-                  backgroundSize: 'cover',
+                  backgroundImage: VariantImage,
+                  // backgroundBlend: 'overlay',
+                  // backgroundSize: 'cover',
                 }}
               >
                 {/* {selectedStyle === style.id && (
