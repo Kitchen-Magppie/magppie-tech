@@ -9,7 +9,7 @@ import { CARD_ACTION_OPTIONS } from '~/mocks';
 import { ChatComingSoonDialog } from '~/components';
 import { useNavigate } from '@remix-run/react';
 
-export function BuyOnlineCardItem(props: TProps) {
+export function AllKitchenCardItem(props: TProps) {
   const { data } = props;
 
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ export function BuyOnlineCardItem(props: TProps) {
         <div className='w-14 h-14 bg-[#354755] text-white text-[10px] font-bold flex items-center justify-center rounded-full'>
           MAGPPIE
         </div>
-        <span className='text-gray-900  text-medium x-font-barlow-semi-condensed-400'>
+        <span className='text-gray-900  text-[21px] x-font-barlow-semi-condensed-400'>
           {data.heading}
         </span>
       </div>
@@ -44,9 +44,9 @@ export function BuyOnlineCardItem(props: TProps) {
                   backgroundSize: 'cover', // Ensure image covers the slide without stretching
                   backgroundPosition: 'center', // Center the background image
                   width: '100%',
-                  height: '100%'
+                  height: '100%',
                 }}
-                className='w-full h-full  x-font-barlow-semi-condensed-100 overflow-hidden relative  rounded-2xl'
+                className='w-full h-full  x-font-barlow-semi-condensed-100 overflow-hidden relative rounded-2xl'
               >
                 {/* <img
                   src={image}
@@ -56,22 +56,22 @@ export function BuyOnlineCardItem(props: TProps) {
                 <div className=''>
                   <div className='bg-transparent absolute bottom-0 left-0 right-0'>
                     <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white border-t-[1px] p-3 flex justify-between items-center'>
-                      <div className='flex justify-center gap-1'>
-                        <div className=' text-2xl'>$</div>
-                        <div className='flex flex-col justify-start'>
-                          <div className='text-xl font-light'>
+                      <div className='flex justify-center'>
+                        <div className=' text-[30px] pr-1'>$ </div>
+                        <div className='flex items-start flex-col'>
+                          <div className='text-[30px] font-light'>
                             {data.amount}
                           </div>
-                          <div className='text-xs font-semibold'>
+                          <div className='text-[14px] font-semibold'>
                             onwards
                           </div>
                         </div>
                       </div>
 
                       <button
-                        className='bg-white text-black font-semibold  px-6 py-2 rounded-full text-sm '
+                        className='bg-white text-black font-normal  px-6 py-2 rounded-full text-[14px] '
                         onClick={() => {
-                          navigate('/all-kitchens');
+                          navigate('/buy-now');
                         }}
                       >
                         buy now
@@ -103,11 +103,6 @@ export function BuyOnlineCardItem(props: TProps) {
               case 'chat':
                 return (
                   <ChatComingSoonDialog>
-                    {/* <Icon
-                      icon={item.value}
-                      inline={true}
-                      className='w-32 h-32 cursor-pointer'
-                    /> */}
                     <div>
                       <img src={item.value} alt='' />
                     </div>
@@ -140,11 +135,6 @@ export function BuyOnlineCardItem(props: TProps) {
                   <div>
                     <img src={item.value} alt='' />
                   </div>
-                  // <Icon
-                  //   icon={item.value}
-                  //   inline={true}
-                  //   className='w-32 h-32 cursor-pointer'
-                  // />
                 );
             }
           };
@@ -160,18 +150,18 @@ export function BuyOnlineCardItem(props: TProps) {
 
       {/* Product Description */}
       <div className='p-4 flex flex-col justify-start items-start'>
-        <h3 className='text-lg x-font-barlow-semi-condensed-500'>
+        <h3 className='text-[20px] x-font-barlow-semi-condensed-500'>
           {data.title}
         </h3>
-        <p className='text-sm text-left text-gray-700 mt-1 x-font-barlow-semi-condensed-300'>
+        <p className='text-[16px] text-left text-gray-700 mt-1 x-font-barlow-semi-condensed-300'>
           {data.desc}
         </p>
-        <div
+        {/* <div
           // href='/wardrobes'
           className=' text-gray-500 font-medium text-sm mt-2 inline-block underline cursor-pointer'
         >
           {data.more}
-        </div>
+        </div> */}
       </div>
     </div>
   );

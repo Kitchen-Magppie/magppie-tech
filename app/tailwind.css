@@ -17,8 +17,35 @@ body {
 }
 
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
-  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none;
+  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;
+  /* Hide scrollbar for Firefox */
+}
+
+/* Ensure Swiper container takes up full width */
+.swiper-container {
+  width: 100%;
+  /* Take up full width of the parent container */
+  overflow: hidden;
+  /* Prevent overflow and horizontal scroll */
+  box-sizing: border-box;
+  /* Ensure padding and borders are included in width calculation */
+}
+
+/* Ensure each Swiper slide takes up 100% of the container */
+.swiper-slide {
+  width: 100% !important;
+  /* Slide takes up the full width of the container */
+  max-width: 100%;
+  /* Prevent slides from exceeding the container width */
+  flex-shrink: 0;
+  /* Prevent shrinking of slides */
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @layer base {
@@ -49,6 +76,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -81,6 +109,7 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
