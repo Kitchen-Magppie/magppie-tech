@@ -45,47 +45,19 @@ export function OnGoing(props: TProps) {
       <div className='flex justify-start px-3 py-4 w-full text-gray-500 gap-6'>
         {CARD_ACTION_OPTIONS?.map((item, i) => {
           const getAction = () => {
+            const icon = (
+              <img
+                src={item.value}
+                alt={item.value}
+                className='cursor-pointer'
+              />
+            );
             switch (item.label) {
               case 'chat':
-                return (
-                  <ChatComingSoonDialog>
-                    {/* <Icon
-                      icon={item.value}
-                      className='w-8 h-8 cursor-pointer'
-                    /> */}
-                    <div>
-                      <img src={item.value} alt='' />
-                    </div>
-                  </ChatComingSoonDialog>
-                );
-
-              case 'call us':
-                return (
-                  <div
-                  // onClick={() => {
-                  //   const phoneNumber = '+911234567890';
-                  //   window.location.href = `tel:${phoneNumber}`;
-                  // }}
-                  >
-                    <img src={item.value} alt='' />
-                  </div>
-                  // <Icon
-                  //   icon={item.value}
-                  //   onClick={() => {
-                  //     const phoneNumber = '+911234567890';
-                  //     window.location.href = `tel:${phoneNumber}`;
-                  //   }}
-                  //   className='w-8 h-8 cursor-pointer'
-                  // />
-                );
+                return <ChatComingSoonDialog>{icon}</ChatComingSoonDialog>;
 
               default:
-                return (
-                  <div>
-                    <img src={item.value} alt='' />
-                  </div>
-                  // <Icon icon={item.value} className='w-8 h-8 cursor-pointer' />
-                );
+                return icon;
             }
           };
           return (

@@ -1,9 +1,8 @@
 import type { MetaFunction } from '@remix-run/node';
-import AllKitchens from '~/pages/all-kitchens';
+import AllKitchens from '~/pages/kitchens';
 // =========================================================
 
 // =========================================================
-
 
 export default function AllKitchensPage() {
   return <AllKitchens />;

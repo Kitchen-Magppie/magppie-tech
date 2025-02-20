@@ -1,9 +1,16 @@
 import { Icon } from '@iconify/react';
+import { useNavigate } from '@remix-run/react';
 
 export function ButtonsMenu() {
+  const navigate = useNavigate();
   return (
     <div className='fixed bottom-4 left-1/2 w-full -translate-x-1/2 flex items-center justify-center gap-3'>
-      <button className='w-12 h-12 flex items-center justify-center bg-[#313E48] text-white rounded-full shadow-lg'>
+      <button
+        className='w-12 h-12 flex items-center justify-center bg-[#313E48] text-white rounded-full shadow-lg'
+        onClick={() => {
+          navigate('/');
+        }}
+      >
         <Icon icon='mdi:arrow-left' width='24' height='24' />
       </button>
 
