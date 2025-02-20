@@ -99,43 +99,19 @@ export function AllKitchenCardItem(props: TProps) {
       <div className='flex justify-start gap-6 px-4 py-3 text-gray-500'>
         {CARD_ACTION_OPTIONS?.map((item, i) => {
           const getAction = () => {
+            const icon = (
+              <img
+                src={item.value}
+                alt={item.value}
+                className='cursor-pointer'
+              />
+            );
             switch (item.label) {
               case 'chat':
-                return (
-                  <ChatComingSoonDialog>
-                    <div>
-                      <img src={item.value} alt='' />
-                    </div>
-                  </ChatComingSoonDialog>
-                );
-
-              case 'call us':
-                return (
-                  <div
-                  // onClick={() => {
-                  //   const phoneNumber = '+911234567890';
-                  //   window.location.href = `tel:${phoneNumber}`;
-                  // }}
-                  >
-                    <img src={item.value} alt='' />
-                  </div>
-                  // <Icon
-                  //   icon={item.value}
-                  //   inline={true}
-                  //   onClick={() => {
-                  //     const phoneNumber = '+911234567890';
-                  //     window.location.href = `tel:${phoneNumber}`;
-                  //   }}
-                  //   className='w-32 h-32 cursor-pointer'
-                  // />
-                );
+                return <ChatComingSoonDialog>{icon}</ChatComingSoonDialog>;
 
               default:
-                return (
-                  <div>
-                    <img src={item.value} alt='' />
-                  </div>
-                );
+                return icon;
             }
           };
           return (

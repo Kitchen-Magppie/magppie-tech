@@ -46,34 +46,19 @@ export default function BuyNow() {
         <div className='flex justify-evenly px-3 py-4 w-full text-gray-600 gap-6 conatiner mx-auto max-w-80 mt-5'>
           {CARD_ACTION_OPTIONS?.map((item, i) => {
             const getAction = () => {
+              const icon = (
+                <img
+                  src={item.value}
+                  alt={item.value}
+                  className='cursor-pointer'
+                />
+              );
               switch (item.label) {
                 case 'chat':
-                  return (
-                    <ChatComingSoonDialog>
-                      <div>
-                        <img src={item.value} alt='' />
-                      </div>
-                    </ChatComingSoonDialog>
-                  );
-
-                case 'call us':
-                  return (
-                    <div
-                    // onClick={() => {
-                    //   const phoneNumber = '+911234567890';
-                    //   window.location.href = `tel:${phoneNumber}`;
-                    // }}
-                    >
-                      <img src={item.value} alt='' />
-                    </div>
-                  );
+                  return <ChatComingSoonDialog>{icon}</ChatComingSoonDialog>;
 
                 default:
-                  return (
-                    <div>
-                      <img src={item.value} alt='' />
-                    </div>
-                  );
+                  return icon;
               }
             };
             return (

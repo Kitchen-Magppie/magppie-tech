@@ -36,47 +36,19 @@ export function CategoryCardItem(props: TProps) {
       <div className='flex justify-start px-3 py-4 w-full text-gray-500 gap-6'>
         {CARD_ACTION_OPTIONS?.map((item, i) => {
           const getAction = () => {
+            const icon = (
+              <img
+                src={item.value}
+                alt={item.value}
+                className='cursor-pointer'
+              />
+            );
             switch (item.label) {
               case 'chat':
-                return (
-                  <ChatComingSoonDialog>
-                    {/* <Icon
-                      icon={item.value}
-                      className='w-8 h-8 cursor-pointer'
-                    /> */}
-                    <div>
-                      <img src={item.value} alt='' />
-                    </div>
-                  </ChatComingSoonDialog>
-                );
-
-              case 'call us':
-                return (
-                  <div
-                  // onClick={() => {
-                  //   const phoneNumber = '+911234567890';
-                  //   window.location.href = `tel:${phoneNumber}`;
-                  // }}
-                  >
-                    <img src={item.value} alt='' />
-                  </div>
-                  // <Icon
-                  //   icon={item.value}
-                  //   onClick={() => {
-                  //     const phoneNumber = '+911234567890';
-                  //     window.location.href = `tel:${phoneNumber}`;
-                  //   }}
-                  //   className='w-8 h-8 cursor-pointer'
-                  // />
-                );
+                return <ChatComingSoonDialog>{icon}</ChatComingSoonDialog>;
 
               default:
-                return (
-                  <div>
-                    <img src={item.value} alt='' />
-                  </div>
-                  // <Icon icon={item.value} className='w-8 h-8 cursor-pointer' />
-                );
+                return icon;
             }
           };
           return (
@@ -95,7 +67,7 @@ export function CategoryCardItem(props: TProps) {
           {data.subTitle}
         </h3>
         <p className='text-sm text-gray-700 mt-1'>{data.desc}</p>
-        <div className='x-font-barlow-semi-condensed-400 underline font-medium text-lg mt-2 inline-block text-gray-700'>
+        <div className='x-font-barlow-semi-condensed-400 underline font-medium text-lg mt-2 inline-block text-gray-700 cursor-pointer'>
           READ MORE
         </div>
       </div>

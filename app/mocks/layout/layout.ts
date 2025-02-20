@@ -4,7 +4,7 @@ import PeopleSvg from '~/assets/images/navigation/people.svg';
 import MenuSvg from '~/assets/images/navigation/menu.svg';
 
 export const NAVIGATION_OPTIONS = [
-  { icon: HomeSvg, label: 'Home' },
+  { icon: HomeSvg, label: 'Home', url: '/' },
   { icon: DropSvg, label: 'Drop' },
   { icon: PeopleSvg, label: 'Account' },
   { icon: MenuSvg, label: 'Menu' },
