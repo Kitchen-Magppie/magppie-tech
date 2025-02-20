@@ -44,7 +44,7 @@ export function BuyOnlineCardItem(props: TProps) {
                   backgroundSize: 'cover', // Ensure image covers the slide without stretching
                   backgroundPosition: 'center', // Center the background image
                   width: '100%',
-                  height: '100%'
+                  height: '100%',
                 }}
                 className='w-full h-full  x-font-barlow-semi-condensed-100 overflow-hidden relative  rounded-2xl'
               >
@@ -62,9 +62,7 @@ export function BuyOnlineCardItem(props: TProps) {
                           <div className='text-xl font-light'>
                             {data.amount}
                           </div>
-                          <div className='text-xs font-semibold'>
-                            onwards
-                          </div>
+                          <div className='text-xs font-semibold'>onwards</div>
                         </div>
                       </div>
 
