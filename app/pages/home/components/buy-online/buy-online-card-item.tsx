@@ -53,16 +53,18 @@ export function BuyOnlineCardItem(props: TProps) {
                   alt={`${data.title} ${i + 1}`}
                   className='w-full h-full object-cover rounded-t-lg'
                 /> */}
-                <div className=''>
+                <div>
                   <div className='bg-transparent absolute bottom-0 left-0 right-0'>
                     <div className='absolute bottom-0 left-0 w-full bg-black/40 text-white border-t-[1px] p-3 flex justify-between items-center'>
                       <div className='flex justify-center gap-1'>
-                        <div className=' text-2xl'>$</div>
+                        <div className=' text-2xl leading-[normal]'>$</div>
                         <div className='flex flex-col justify-start'>
-                          <div className='text-xl font-light'>
+                          <div className='text-xl font-light leading-[normal]'>
                             {data.amount}
                           </div>
-                          <div className='text-xs font-semibold'>onwards</div>
+                          <div className='text-xs font-semibold leading-[0.5]'>
+                            onwards
+                          </div>
                         </div>
                       </div>
 
