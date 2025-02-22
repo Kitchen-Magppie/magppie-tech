@@ -3,6 +3,8 @@ import theChef from '~/assets/videos/the-chef.mp4';
 import theChefOne from '~/assets/images/the-chef/the-chef-1.png';
 import theChefTwo from '~/assets/images/the-chef/the-chef-2.png';
 import theChefThree from '~/assets/images/the-chef/the-chef-3.png';
+import BuyOnlineVideo from '~/assets/videos/buy-online-main.mp4';
+
 import { ChatComingSoonDialog } from '~/components';
 import { CARD_ACTION_OPTIONS } from '~/mocks';
 import { ProductVariant, ButtonsMenu, MobileLayout } from './components';
@@ -32,12 +34,12 @@ export default function BuyNow() {
           {/* Content Overlay */}
           <div className='relative flex flex-col items-center pt-80 px-6 text-center'>
             {/* Title */}
-            <h1 className='text-5xl text-white x-font-barlow-semi-condensed-100'>
+            <h1 className='text-5xl text-white x-font-barlow-semi-condensed-100 opacity-70'>
               the chef
             </h1>
 
             {/* Subtitle */}
-            <p className='text-white/90 text-lg x-font-barlow-semi-condensed-400'>
+            <p className='text-white/90 text-lg x-font-barlow-semi-condensed-400 opacity-70'>
               wellness kitchen
             </p>
           </div>
@@ -92,6 +94,8 @@ export default function BuyNow() {
         </div>
 
         <ProductVariant />
+        <ProductVariant />
+
         <div className='bg-white p-6 rounded-lg text-center max-w-sm mx-auto flex flex-col gap-8'>
           <p className='text-gray-600 text-lg x-font-barlow-semi-condensed-300'>
             Balinese-inspired outdoor kitchen designs featuring Silverstone body
@@ -107,32 +111,36 @@ export default function BuyNow() {
           </button>
         </div>
 
-        <div className='mt-8 grid grid-cols-1 gap-6 px-2'>
-          <div>
-            <img src={theChefOne} alt='' className='w-full rounded-lg' />
-          </div>
-          <div>
-            <img
-              src={theChefTwo}
-              alt=''
-              className='w-full rounded-lg h-[500px] object-cover'
-            />
+        <div className='mt-8'>
+          <div className='grid grid-cols-1 gap-6 px-2'>
+            <div>
+              <img src={theChefOne} alt='' className='w-full rounded-lg ' />
+            </div>
+            <div>
+              <img
+                src={theChefTwo}
+                alt=''
+                className='w-full rounded-lg h-[500px] object-cover'
+              />
+            </div>
           </div>
           <video
-            className='w-full h-[500px] object-cover rounded-lg'
+            className='w-full h-[500px] object-cover mt-5'
             autoPlay
             loop
             muted
             playsInline
           >
-            <source src={theChef} type='video/mp4' />
+            <source src={BuyOnlineVideo} type='video/mp4' />
             Your browser does not support the video tag.
           </video>
-          <img
-            src={theChefThree}
-            alt=''
-            className='w-full rounded-lg shadow-md'
-          />
+          <div className='p-1'>
+            <img
+              src={theChefThree}
+              alt=''
+              className='w-full rounded-lg shadow-md'
+            />
+          </div>
         </div>
       </MobileLayout>
 

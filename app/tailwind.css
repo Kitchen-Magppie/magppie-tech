@@ -114,3 +114,28 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer client-story {
+  /* Client Story Properties Started */
+  .client-story-p {
+    @apply x-font-barlow-semi-condensed-300 text-[20px] font-light leading-7;
+  }
+  .client-story-header {
+    @apply font-light x-font-barlow-semi-condensed-700;
+  }
+
+  .client-story-quote {
+    @apply x-font-noto-serif-display-400-italic text-[40px] leading-tight;
+  }
+  /* Client Story Properties Ended */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
