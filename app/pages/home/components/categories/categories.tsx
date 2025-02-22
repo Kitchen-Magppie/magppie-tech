@@ -39,6 +39,6 @@ export function Categories() {
 }
 
 const CATEGORY_OPTIONS = [
-  { url: ProductCategoriesOne, label: 'Wellness Kitchens' },
-  { url: ProductCategoriesTwo, label: 'Wellness Wardrobes' },
+  { url: ProductCategoriesOne, label: 'wellness kitchens' },
+  { url: ProductCategoriesTwo, label: 'wellness wardrobes' },
 ];

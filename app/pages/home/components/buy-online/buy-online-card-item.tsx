@@ -20,7 +20,7 @@ export function BuyOnlineCardItem(props: TProps) {
         <div className='w-14 h-14 bg-[#354755] text-white text-[10px] font-bold flex items-center justify-center rounded-full'>
           MAGPPIE
         </div>
-        <span className='text-gray-900  text-medium x-font-barlow-semi-condensed-400'>
+        <span className='text-gray-900 text-medium x-font-barlow-semi-condensed-400 text-xl'>
           {data.heading}
         </span>
       </div>
