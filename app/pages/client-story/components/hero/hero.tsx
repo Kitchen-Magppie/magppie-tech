@@ -40,7 +40,7 @@ export function Hero() {
           </button>
         </div>
         {/* Dark Overlay */}
-        <div className='absolute inset-0 h-[700px] bg-black bg-opacity-20'></div>
+        <div className='absolute inset-0 h-[700px] bg-black bg-opacity-20' />
       </div>
     </div>
   );
