@@ -1,5 +1,5 @@
 import { MobileLayout } from '~/components';
-import {Content, Hero } from './components';
+import { Content, Hero } from './components';
 
 export default function ClientStory() {
   return (
