@@ -230,7 +230,7 @@ export const clients = [
     subTitle: 'Qwner, Cakesmith',
   },
   {
-    id: 22,
+    id: 23,
     src: prashantBhalla,
     height: '315px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -238,7 +238,7 @@ export const clients = [
     subTitle: 'President, Manav Rachna',
   },
   {
-    id: 23,
+    id: 24,
     src: ajay,
     height: '270px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -246,7 +246,7 @@ export const clients = [
     subTitle: 'Owner, Om Book Shop',
   },
   {
-    id: 24,
+    id: 25,
     src: kamal,
     height: '270px',
     objectPosition: '60%',
@@ -254,7 +254,7 @@ export const clients = [
     subTitle: 'Member of Parliament, India',
   },
   {
-    id: 25,
+    id: 26,
     src: manojGaur,
     height: '300px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -262,7 +262,7 @@ export const clients = [
     subTitle: 'MD, Gaurs',
   },
   {
-    id: 26,
+    id: 27,
     src: amar,
     height: '265px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -270,7 +270,7 @@ export const clients = [
     subTitle: 'Senior Cardiologist',
   },
   {
-    id: 27,
+    id: 28,
     src: kumar,
     height: '300px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -278,7 +278,7 @@ export const clients = [
     subTitle: 'Indian Poet, Politician',
   },
   {
-    id: 28,
+    id: 29,
     src: sayali,
     height: '435px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -286,7 +286,7 @@ export const clients = [
     subTitle: 'Actress',
   },
   {
-    id: 29,
+    id: 30,
     src: arvind,
     height: '350px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -294,7 +294,7 @@ export const clients = [
     subTitle: 'MD, Rico',
   },
   {
-    id: 30,
+    id: 31,
     src: nitin,
     height: '280px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -302,7 +302,7 @@ export const clients = [
     subTitle: 'Minister',
   },
   {
-    id: 31,
+    id: 32,
     src: nakul,
     height: '235px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -310,7 +310,7 @@ export const clients = [
     subTitle: 'Politician, son of Mr. Kamal nath',
   },
   {
-    id: 32,
+    id: 33,
     src: sandeep,
     height: '310px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -319,7 +319,7 @@ export const clients = [
       'M President of Asian Academy of film & Television. Indian film maker',
   },
   {
-    id: 33,
+    id: 34,
     src: kuntal,
     height: '330px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -327,7 +327,7 @@ export const clients = [
     subTitle: 'Duke Owner',
   },
   {
-    id: 34,
+    id: 35,
     src: raghav,
     height: '250px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -335,7 +335,7 @@ export const clients = [
     subTitle: 'D.P Jindal Group',
   },
   {
-    id: 35,
+    id: 36,
     src: ujjwal,
     height: '280px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -344,7 +344,7 @@ export const clients = [
   },
 
   {
-    id: 36,
+    id: 37,
     src: prashant,
     height: '300px',
     objectPosition: '60%',
@@ -352,7 +352,7 @@ export const clients = [
     subTitle: 'Co-founder & Ceo of Tata 1mg',
   },
   {
-    id: 37,
+    id: 38,
     src: pranavAnsal,
     height: '250px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -360,7 +360,7 @@ export const clients = [
     subTitle: 'Owner of Ansal’s Group',
   },
   {
-    id: 38,
+    id: 39,
     src: varinAggarwal,
     height: '360px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -368,7 +368,7 @@ export const clients = [
     subTitle: 'President, Suncity Projects Pvt. Ltd.',
   },
   {
-    id: 39,
+    id: 40,
     src: akash,
     height: '340px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -376,7 +376,7 @@ export const clients = [
     subTitle: 'Joint MD & Chief Business Officer DLF Ltd',
   },
   {
-    id: 40,
+    id: 41,
     src: masood,
     height: '240px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -384,7 +384,7 @@ export const clients = [
     subTitle: 'Shalimar Group',
   },
   {
-    id: 41,
+    id: 42,
     src: ashok,
     height: '310px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -392,7 +392,7 @@ export const clients = [
     subTitle: 'Cosmo First Ltd',
   },
   {
-    id: 42,
+    id: 43,
     src: arjanKumar,
     height: '390px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -400,7 +400,7 @@ export const clients = [
     subTitle: 'Chief Justice - High Court',
   },
   {
-    id: 43,
+    id: 44,
     src: vivekSingh,
     height: '260px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -408,7 +408,7 @@ export const clients = [
     subTitle: 'Advocate Supreme court of Delhi ',
   },
   {
-    id: 44,
+    id: 45,
     src: vikasSingh,
     height: '235px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -416,7 +416,7 @@ export const clients = [
     subTitle: 'Senior advocate and President of Supreme Court Bar association',
   },
   {
-    id: 45,
+    id: 46,
     src: anujGupta,
     height: '400px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -424,7 +424,7 @@ export const clients = [
     subTitle: 'Ceo & Director Hitachi Systems',
   },
   {
-    id: 46,
+    id: 47,
     src: ashishMittal,
     height: '335px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -432,7 +432,7 @@ export const clients = [
     subTitle: 'Ceo at Innovatiview India Ltd.',
   },
   {
-    id: 47,
+    id: 48,
     src: rajivGupta,
     height: '300px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -440,7 +440,7 @@ export const clients = [
     subTitle: 'Ceo of Wave infrastructure',
   },
   {
-    id: 48,
+    id: 49,
     src: krishnaVenu,
     height: '260px',
     objectPosition: '60%',
@@ -448,7 +448,7 @@ export const clients = [
     subTitle: 'Senior advocate of Supreme Court of India',
   },
   {
-    id: 49,
+    id: 50,
     src: sonalJindal,
     height: '365px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -456,7 +456,7 @@ export const clients = [
     subTitle: 'BInternational Speaker, Founder Renowned Brand Medusa',
   },
   {
-    id: 50,
+    id: 51,
     src: ramSarvapalli,
     height: '405px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -464,7 +464,7 @@ export const clients = [
     subTitle: 'EY Global Consulting Deputy Vice',
   },
   {
-    id: 51,
+    id: 52,
     src: mohitSachdeva,
     height: '260px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -472,7 +472,7 @@ export const clients = [
     subTitle: 'Director, St. Xavier School ',
   },
   {
-    id: 52,
+    id: 53,
     src: pranavVikram,
     height: '300px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -480,7 +480,7 @@ export const clients = [
     subTitle: 'Owner of DCM Shriram Ltd ',
   },
   {
-    id: 53,
+    id: 54,
     src: kkModi,
     height: '310px',
     objectPosition: 'center', // Added default value for objectPosition
