@@ -89,7 +89,7 @@ export function Clients() {
       </div>
 
       <Link
-        to='/team'
+        to='/clients'
         className='mt-6 text-lg x-font-barlow-semi-condensed-500 flex justify-center underline'
       >
         see more clients
