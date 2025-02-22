@@ -46,7 +46,7 @@ import vrinda from '~/assets/images/clients/vrinda.png';
 import vivek from '~/assets/images/clients/vivek-shegal.png';
 import tarun from '~/assets/images/clients/tarun.png';
 import atul from '~/assets/images/clients/atul-kirloskar.png';
-import ajay from '~/assets/images/clients/ajay-garg.png';
+import ajayGarg from '~/assets/images/clients/ajay-garg.png';
 import praveenJain from '~/assets/images/clients/praveen-jain.png';
 import subhash from '~/assets/images/clients/subhash-chandra.png';
 import nyrika from '~/assets/images/clients/nyrika.png'
@@ -143,135 +143,134 @@ export const clients = [
   },
   {
     id: 12,
-    src: subhash,
-    height: '335px',
-    objectPosition: 'center', // Added default value for objectPosition
-    title: 'Subhash Chandra',
-    subTitle: 'Chairman, Zee TV',
-  },
-  {
-    id: 13,
-    src: nyrika,
-    height: '300px',
-    objectPosition: '60%',
-    title: 'Nyrika Crishna',
-    subTitle: 'Godrej',
-  },
-  {
-    id: 14,
-    src: priya,
-    height: '420px',
-    objectPosition: 'center', // Added default value for objectPosition
-    title: 'Priya Paul',
-    subTitle: 'Chairperson, The Park',
-  },
-  {
-    id: 15,
-    src: ajay,
-    height: '300px',
-    objectPosition: 'center', // Added default value for objectPosition
-    title: 'Ajay Aggrawal',
-    subTitle: 'Qwner, Action',
-  },
-  {
-    id: 16,
-    src: praveenJain,
-    height: '300px',
-    objectPosition: 'center', // Added default value for objectPosition
-    title: 'Praveen Jain',
-    subTitle: 'Owner, Marvel Jain',
-  },
-  {
-    id: 17,
-    src: ajay,
-    height: '300px',
-    objectPosition: 'center', // Added default value for objectPosition
-    title: 'Ajay Garg',
-    subTitle: 'Qwner, SMC',
-  },
-  {
-    id: 18,
-    src: atul,
-    height: '350px',
-    objectPosition: 'center', // Added default value for objectPosition
-    title: 'Atul Kirloskar',
-    subTitle: 'MD, kirloskar',
-  },
-  {
-    id: 19,
-    src: tarun,
-    height: '300px',
-    objectPosition: 'center', // Added default value for objectPosition
-    title: 'Tarun Tahiliani',
-    subTitle: 'Fashion Designer',
-  },
-  {
-    id: 20,
-    src: vivek,
-    height: '300px',
-    objectPosition: 'center', // Added default value for objectPosition
-    title: 'Vivek Seghal',
-    subTitle: 'Chairman, Motherson',
-  },
-  {
-    id: 21,
-    src: vandana,
-    height: '350px',
-    objectPosition: 'center', // Added default value for objectPosition
-    title: 'Vrinda Jatia',
-    subTitle: 'Qwner, Cakesmith',
-  },
-  {
-    id: 22,
-    src: shalish,
-    height: '285px',
-    objectPosition: 'center', // Added default value for objectPosition
-    title: 'Shailesh Khaitan',
-    subTitle: 'Owner, Khaitan Group',
-  },
-  {
-    id: 23,
-    src: rohtash,
-    height: '240px',
-    objectPosition: 'center', // Added default value for objectPosition
-    title: 'Rohtash Goel',
-    subTitle: 'CMD, OMAXE',
-  },
-  {
-    id: 24,
     src: kpSingh,
     height: '335px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'KP Singh',
     subTitle: 'Owner, DLF',
   },
-
   {
-    id: 25,
-    src: dhoni,
-    height: '300px',
-    objectPosition: '60%',
-    title: 'MS Dhoni',
-    subTitle: 'Ex-Captain, Indian Cricket Team',
+    id: 13,
+    src: subhash,
+    height: '310px',
+    objectPosition: 'center', // Added default value for objectPosition
+    title: 'Subhash Chandra',
+    subTitle: 'Chairman, Zee TV',
   },
   {
-    id: 26,
+    id: 14,
+    src: nyrika,
+    height: '235px',
+    objectPosition: '60%',
+    title: 'Nyrika Crishna',
+    subTitle: 'Godrej',
+  },
+  {
+    id: 15,
+    src: priya,
+    height: '325px',
+    objectPosition: 'center', // Added default value for objectPosition
+    title: 'Priya Paul',
+    subTitle: 'Chairperson, The Park',
+  },
+  {
+    id: 16,
+    src: ajay,
+    height: '270px',
+    objectPosition: 'center', // Added default value for objectPosition
+    title: 'Ajay Aggrawal',
+    subTitle: 'Qwner, Action',
+  },
+  {
+    id: 17,
+    src: praveenJain,
+    height: '250px',
+    objectPosition: 'left', // Added default value for objectPosition
+    title: 'Praveen Jain',
+    subTitle: 'Owner, Marvel Jain',
+  },
+  {
+    id: 18,
+    src: ajayGarg,
+    height: '320px',
+    objectPosition: 'center', // Added default value for objectPosition
+    title: 'Ajay Garg',
+    subTitle: 'Qwner, SMC',
+  },
+  {
+    id: 19,
+    src: atul,
+    height: '290px',
+    objectPosition: 'center', // Added default value for objectPosition
+    title: 'Atul Kirloskar',
+    subTitle: 'MD, kirloskar',
+  },
+  {
+    id: 20,
+    src: tarun,
+    height: '330px',
+    objectPosition: 'center',// Added default value for objectPosition
+    title: 'Tarun Tahiliani',
+    subTitle: 'Fashion Designer',
+  },
+  {
+    id: 21,
+    src: vivek,
+    height: '325px',
+    objectPosition: 'center', // Added default value for objectPosition
+    title: 'Vivek Seghal',
+    subTitle: 'Chairman, Motherson',
+  },
+  {
+    id: 22,
+    src: vrinda,
+    height: '400px',
+    objectPosition: 'center', // Added default value for objectPosition
+    title: 'Vrinda Jatia',
+    subTitle: 'Qwner, Cakesmith',
+  },
+  {
+    id: 22,
+    src: prashantBhalla,
+    height: '315px',
+    objectPosition: 'center', // Added default value for objectPosition
+    title: 'Dr. Prashant Bhalla',
+    subTitle: 'President, Manav Rachna',
+  },
+  {
+    id: 23,
+    src: ajay,
+    height: '270px',
+    objectPosition: 'center', // Added default value for objectPosition
+    title: 'Ajay Mago',
+    subTitle: 'Owner, Om Book Shop',
+  },
+  {
+    id: 24,
+    src: kamal,
+    height: '270px',
+    objectPosition: '60%',
+    title: 'Kamal Nath',
+    subTitle: 'Member of Parliament, India',
+  },
+  {
+    id: 25,
     src: manojGaur,
-    height: '420px',
+    height: '300px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Manoj Gaur',
     subTitle: 'MD, Gaurs',
   },
   {
-    id: 27,
+    id: 26,
     src: amar,
-    height: '300px',
+    height: '265px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Dr. Amar Singhal',
     subTitle: 'Senior Cardiologist',
   },
   {
-    id: 28,
+    id: 27,
     src: kumar,
     height: '300px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -279,15 +278,15 @@ export const clients = [
     subTitle: 'Indian Poet, Politician',
   },
   {
-    id: 29,
+    id: 28,
     src: sayali,
-    height: '300px',
+    height: '435px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Ms. Sayali Bhagat',
     subTitle: 'Actress',
   },
   {
-    id: 30,
+    id: 29,
     src: arvind,
     height: '350px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -295,57 +294,57 @@ export const clients = [
     subTitle: 'MD, Rico',
   },
   {
-    id: 31,
+    id: 30,
     src: nitin,
-    height: '300px',
+    height: '280px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Nitin Gadkari',
     subTitle: 'Minister',
   },
   {
-    id: 32,
+    id: 31,
     src: nakul,
-    height: '300px',
+    height: '235px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Nakul Nath',
     subTitle: 'Politician, son of Mr. Kamal nath',
   },
   {
-    id: 33,
+    id: 32,
     src: sandeep,
-    height: '350px',
+    height: '310px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Sandeep Marvah',
     subTitle:
       'M President of Asian Academy of film & Television. Indian film maker',
   },
   {
-    id: 34,
+    id: 33,
     src: kuntal,
-    height: '285px',
+    height: '330px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Kuntal Jain',
     subTitle: 'Duke Owner',
   },
   {
-    id: 35,
+    id: 34,
     src: raghav,
-    height: '240px',
+    height: '250px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Raghav Jindal',
     subTitle: 'D.P Jindal Group',
   },
   {
-    id: 36,
+    id: 35,
     src: ujjwal,
-    height: '335px',
+    height: '280px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Ujjwal Munjal',
     subTitle: 'Hero Electronix',
   },
 
   {
-    id: 37,
+    id: 36,
     src: prashant,
     height: '300px',
     objectPosition: '60%',
@@ -353,127 +352,127 @@ export const clients = [
     subTitle: 'Co-founder & Ceo of Tata 1mg',
   },
   {
-    id: 38,
+    id: 37,
     src: pranavAnsal,
-    height: '420px',
+    height: '250px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Pranav Ansal/Ms. Sheetal Ansal',
     subTitle: 'Owner of Ansal’s Group',
   },
   {
-    id: 39,
+    id: 38,
     src: varinAggarwal,
-    height: '300px',
+    height: '360px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Varun Aggarwal',
     subTitle: 'President, Suncity Projects Pvt. Ltd.',
   },
   {
-    id: 40,
+    id: 39,
     src: akash,
-    height: '300px',
+    height: '340px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Akash Ohri',
     subTitle: 'Joint MD & Chief Business Officer DLF Ltd',
   },
   {
-    id: 41,
+    id: 40,
     src: masood,
-    height: '300px',
+    height: '240px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Masood Ahmad',
     subTitle: 'Shalimar Group',
   },
   {
-    id: 42,
+    id: 41,
     src: ashok,
-    height: '350px',
+    height: '310px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Ashok Jaipuria',
     subTitle: 'Cosmo First Ltd',
   },
   {
-    id: 43,
+    id: 42,
     src: arjanKumar,
-    height: '300px',
+    height: '390px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Arjan Kumar Sikri',
     subTitle: 'Chief Justice - High Court',
   },
   {
-    id: 44,
+    id: 43,
     src: vivekSingh,
-    height: '300px',
+    height: '260px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Dr. Vivek Singh',
     subTitle: 'Advocate Supreme court of Delhi ',
   },
   {
-    id: 45,
+    id: 44,
     src: vikasSingh,
-    height: '350px',
+    height: '235px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Vikas Singh',
     subTitle: 'Senior advocate and President of Supreme Court Bar association',
   },
   {
-    id: 46,
+    id: 45,
     src: anujGupta,
-    height: '285px',
+    height: '400px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Anuj Gupta',
     subTitle: 'Ceo & Director Hitachi Systems',
   },
   {
-    id: 47,
+    id: 46,
     src: ashishMittal,
-    height: '240px',
+    height: '335px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Ashish Mittal',
     subTitle: 'Ceo at Innovatiview India Ltd.',
   },
   {
-    id: 48,
+    id: 47,
     src: rajivGupta,
-    height: '335px',
+    height: '300px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Rajiv Gupta',
     subTitle: 'Ceo of Wave infrastructure',
   },
   {
-    id: 49,
+    id: 48,
     src: krishnaVenu,
-    height: '300px',
+    height: '260px',
     objectPosition: '60%',
     title: 'Mr. Krishnan VenuGopal',
     subTitle: 'Senior advocate of Supreme Court of India',
   },
   {
-    id: 50,
+    id: 49,
     src: sonalJindal,
-    height: '420px',
+    height: '365px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Ms. Sonal Jindal',
     subTitle: 'BInternational Speaker, Founder Renowned Brand Medusa',
   },
   {
-    id: 51,
+    id: 50,
     src: ramSarvapalli,
-    height: '300px',
+    height: '405px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Ram Sarvepalli',
     subTitle: 'EY Global Consulting Deputy Vice',
   },
   {
-    id: 52,
+    id: 51,
     src: mohitSachdeva,
-    height: '300px',
+    height: '260px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. Mohit Sachdeva',
     subTitle: 'Director, St. Xavier School ',
   },
   {
-    id: 53,
+    id: 52,
     src: pranavVikram,
     height: '300px',
     objectPosition: 'center', // Added default value for objectPosition
@@ -481,9 +480,9 @@ export const clients = [
     subTitle: 'Owner of DCM Shriram Ltd ',
   },
   {
-    id: 54,
+    id: 53,
     src: kkModi,
-    height: '350px',
+    height: '310px',
     objectPosition: 'center', // Added default value for objectPosition
     title: 'Mr. K K Modi',
     subTitle: 'Chairman MulMul',
