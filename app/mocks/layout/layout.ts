@@ -6,6 +6,6 @@ import MenuSvg from '~/assets/images/navigation/menu.svg';
 export const NAVIGATION_OPTIONS = [
   { icon: HomeSvg, label: 'Home', url: '/' },
   { icon: DropSvg, label: 'Drop' },
-  { icon: PeopleSvg, label: 'Account' },
+  { icon: PeopleSvg, label: 'Account', url: '/profile' },
   { icon: MenuSvg, label: 'Menu' },
 ];

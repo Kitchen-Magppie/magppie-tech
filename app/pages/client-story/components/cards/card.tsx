@@ -1,3 +1,5 @@
+import { Link } from '@remix-run/react';
+
 export function Card({ img, title }: TProps) {
   return (
     <div className='flex flex-col items-center text-center p-4'>
@@ -16,12 +18,13 @@ export function Card({ img, title }: TProps) {
       </h3>
 
       {/* Disabled Buy Now Button */}
-      <button
-        className='mt-2 bg-black opacity-30 text-white text-sm font-medium px-4 py-1 rounded-2xl cursor-not-allowed x-font-barlow-semi-condensed-500'
-        disabled
+      <Link
+        to='/buy-now'
+        className='mt-2 bg-black opacity-30 text-white text-sm font-medium px-4 py-1 rounded-2xl x-font-barlow-semi-condensed-500'
+        // disabled
       >
         BUY NOW
-      </button>
+      </Link>
     </div>
   );
 }

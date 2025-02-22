@@ -1,6 +1,7 @@
+import { useState } from 'react';
+// =========================================================
 import { MobileLayout } from '~/components';
 import { UserCard } from './components';
-import { useState } from 'react';
 import mLogo from '~/assets/images/m-logo.png';
 import savedItems from '~/assets/images/saved-items.png';
 import plus from '~/assets/images/plus.png';
