@@ -10,12 +10,12 @@ export function Categories() {
       </h2>
 
       {/* Categories */}
-      <div className='mt-6 flex justify-center gap-8'>
+      <div className='mt-6 grid grid-cols-2 gap-8 px-2'>
         {/* Category 1 */}
         {CATEGORY_OPTIONS?.map((data, i) => {
           return (
             <div className='flex flex-col items-center' key={i}>
-              <div className='w-40 h-20 rounded-[50px] overflow-hidden'>
+              <div className='w-full h-20 rounded-[50px] overflow-hidden'>
                 <video
                   className='w-full h-full object-cover'
                   autoPlay
@@ -39,6 +39,6 @@ export function Categories() {
 }
 
 const CATEGORY_OPTIONS = [
-  { url: ProductCategoriesOne, label: 'Wellness Kitchens' },
-  { url: ProductCategoriesTwo, label: 'Wellness Wardrobes' },
+  { url: ProductCategoriesOne, label: 'wellness kitchens' },
+  { url: ProductCategoriesTwo, label: 'wellness wardrobes' },
 ];

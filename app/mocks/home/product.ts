@@ -10,14 +10,14 @@ import share from '~/assets/images/share.svg';
 export const CATEGORY_MOCK_DATA: TCategoryItem[] = [
   {
     id: 1,
-    title: 'Wellness Kitchens',
+    title: 'wellness kitchens',
     subTitle: 'benefits of Wellness Kitchen',
     videoUrl: ProductCategoriesOne,
     desc: 'Harmful formaldehyde emissions from kitchens and furniture are putting our cellular health at risk...',
   },
   {
     id: 2,
-    title: 'Wellness Wardrobes',
+    title: 'wellness wardrobes',
     subTitle: 'benefits of Wellness Wardrobes',
     videoUrl: ProductCategoriesTwo,
     desc: 'Harmful formaldehyde emissions from kitchens and furniture are putting our cellular health at risk...',
