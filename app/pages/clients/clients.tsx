@@ -8,7 +8,7 @@ export default function Clients() {
         <h1 className='text-[40px] x-font-dalglish-400 '>
           where wellness meets trust
         </h1>
-        <h2 className='text-[15px] x-fontbarlow-semi-condense-400 pt-6'>
+        <h2 className='text-[15px] x-font-barlow-semi-condensed-400 pt-6'>
           Read stories of connection with our clients
         </h2>
       </div>
