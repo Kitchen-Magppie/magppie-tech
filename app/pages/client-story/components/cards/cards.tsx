@@ -1,4 +1,4 @@
-import { Card } from './card';
+import { Card } from './client-story-card';
 import { cardsData } from './data';
 
 export function Cards() {
