@@ -1,4 +1,4 @@
-import { AllKitchenCardItem } from './card';
+import { AllKitchenCardItem } from './all-kitchen-card-item';
 import { ALL_KITCHENS_MOCK_DATA } from './data';
 
 export function Cards() {
