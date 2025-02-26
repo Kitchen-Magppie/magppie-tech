@@ -22,10 +22,10 @@ export default function Form() {
             <p className='text-[16px] text-center font-medium mb-6 text-white x-fontbarlow-semi-condense-400'>
               Your Kitchen Area Size
             </p>
-            <div className='flex gap-10 mt-2'>
+            <div className='flex gap-2 mt-2'>
               {/* Length Select */}
               <div className='relative w-1/2'>
-                <select className='w-full p-2 border rounded-full text-black bg-[#FFFFFF] appearance-none pr-10'>
+                <select className='w-full p-2 text-xs border rounded-full text-black bg-[#FFFFFF] appearance-none pr-10'>
                   <option>Length (Ft)</option>
                 </select>
                 <div className='absolute inset-y-0 right-3 flex items-center pointer-events-none'>
@@ -38,7 +38,7 @@ export default function Form() {
 
               {/* Width Select */}
               <div className='relative w-1/2'>
-                <select className='w-full p-2 border rounded-full text-black bg-[#FFFFFF] appearance-none pr-10'>
+                <select className='w-full p-2 text-xs border rounded-full text-black bg-[#FFFFFF] appearance-none pr-10'>
                   <option>Width (Ft)</option>
                 </select>
                 <div className='absolute inset-y-0 right-3 flex items-center pointer-events-none'>
@@ -57,7 +57,7 @@ export default function Form() {
               <p className='text-[16px] font-medium text-white x-fontbarlow-semi-condense-400 text-center'>
                 Your Kitchen Shape
               </p>
-              <div className='flex justify-between bg-[#000000] rounded-lg mt-2 w-full h-[200px]'>
+              <div className='flex bg-[#000000] rounded-lg mt-2 gap-2 w-full h-[200px]'>
                 {['L Shape', 'U Shape', 'Parallel'].map((shape) => {
                   const shapeImages = {
                     'L Shape': lShape,
@@ -71,7 +71,7 @@ export default function Form() {
                       onClick={() => setKitchenShape(shape)}
                     >
                       <div
-                        className={`w-[100px] flex flex-col items-center h-[155px] ${
+                        className={` h-[150px] flex flex-col items-center ${
                           kitchenShape === shape
                             ? 'bg-[#BFD2C1]'
                             : 'bg-[#FFFFFF]'
@@ -82,13 +82,13 @@ export default function Form() {
                           alt={`${shape} icon`}
                           className='w-full h-full object-contain rounded-md'
                         />
-                        <p className='absolute bottom-12 text-[12px] text-black'>
+                        <p className='absolute bottom-14 text-[12px] text-black'>
                           {shape}
                         </p>
                       </div>
                       {kitchenShape === shape ? (
-                          <img className='mt-2' src={tick} alt='' />
-                        ) : null}
+                        <img className='mt-2' src={tick} alt='' />
+                      ) : null}
                     </div>
                   );
                 })}
