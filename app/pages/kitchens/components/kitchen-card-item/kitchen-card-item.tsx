@@ -1,15 +1,15 @@
 // import { Icon } from '@iconify/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+import { useNavigate } from '@remix-run/react';
 import 'swiper/css/pagination';
 // =================================================
-import classes from './buy-online-card-item.module.css';
+import classes from './kitchen-card-item.module.css';
 import { TBuyOnlineItem } from '~/types';
 import { CARD_ACTION_OPTIONS } from '~/mocks';
 import { ChatComingSoonDialog } from '~/components';
-import { useNavigate } from '@remix-run/react';
 
-export function AllKitchenCardItem(props: TProps) {
+export function KitchenCardItem(props: TProps) {
   const { data } = props;
 
   const navigate = useNavigate();

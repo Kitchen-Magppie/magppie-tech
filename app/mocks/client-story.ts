@@ -1,4 +1,16 @@
-export const clientStory = {
+import viewOne from '~/assets/pages/client-story/viewOne.png';
+import viewTwo from '~/assets/pages/client-story/ViewTwo.png';
+import viewThree from '~/assets/pages/client-story/viewThree.png';
+import viewFour from '~/assets/pages/client-story/viewFour.png';
+
+export const CLIENT_STORY_ROWS = [
+  { id: 1, img: viewOne, name: 'Nova' },
+  { id: 2, img: viewTwo, name: 'Marcus' },
+  { id: 3, img: viewThree, name: 'Julius' },
+  { id: 4, img: viewFour, name: 'Ellis' },
+];
+
+export const CLIENT_STORY_CONTENT_DATA = {
   name: 'M S Dhoni',
   contentOne: 'When MS Dhoni & Sakshi found Their Wellness Haven at Magppie.',
   contentTwo:

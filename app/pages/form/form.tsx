@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { Icon } from '@iconify/react';
 // =========================================================
 import { ButtonsMenu } from './components/buttons-menu';
-import lShape from './assets/l-shape.svg';
-import uShape from './assets/u-shape.svg';
-import tick from './assets/tick.svg';
-import parallelShape from './assets/parallel-shape.svg';
+import lShape from '~/assets/pages/form/l-shape.svg';
+import uShape from '~/assets/pages/form/u-shape.svg';
+import tick from '~/assets/pages/form/tick.svg';
+import parallelShape from '~/assets/pages/form/parallel-shape.svg';
 import { _ } from '~/types';
 
 export default function Form() {

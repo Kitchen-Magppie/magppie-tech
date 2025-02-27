@@ -1,7 +1,7 @@
 import novaOne from '~/assets/images/buy-online/nova-one.png';
 import { _, TBuyOnlineItem } from '~/types';
 
-export const ALL_KITCHENS_MOCK_DATA: TBuyOnlineItem[] = [
+export const KITCHEN_DATA: TBuyOnlineItem[] = [
   {
     id: 1,
     amount: '15,000',

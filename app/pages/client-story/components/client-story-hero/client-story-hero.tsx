@@ -1,9 +1,9 @@
-import dhoniStory from '../../assets/dhoni-story.png';
-import arrowRight from '../../assets/arrow-right.svg';
-import arrowLeft from '../../assets/arrow-left.svg';
-import cross from '../../assets/cross.svg';
+import dhoniStory from '~/assets/pages/client-story/dhoni-story.png';
+import arrowRight from '~/assets/pages/client-story/arrow-right.svg';
+import arrowLeft from '~/assets/pages/client-story/arrow-left.svg';
+import cross from '~/assets/pages/client-story/cross.svg';
 
-export function Hero() {
+export function ClientStoryHero() {
   return (
     <div className='relative w-full h-[700px] flex'>
       <div className='relative overflow-hidden'>
