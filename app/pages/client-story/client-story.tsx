@@ -1,11 +1,11 @@
 import { MobileLayout } from '~/components';
-import { Content, Hero } from './components';
+import { ClientStoryContent, ClientStoryHero } from './components';
 
 export default function ClientStory() {
   return (
     <MobileLayout>
-      <Hero />
-      <Content />
+      <ClientStoryHero />
+      <ClientStoryContent />
     </MobileLayout>
   );
 }

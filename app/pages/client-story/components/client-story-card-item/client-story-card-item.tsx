@@ -1,6 +1,6 @@
 import { Link } from '@remix-run/react';
 
-export function Card({ img, title }: TProps) {
+export function ClientStoryCardItem({ img, title }: TProps) {
   return (
     <div className='flex flex-col items-center text-center p-4'>
       {/* Circular Image */}
